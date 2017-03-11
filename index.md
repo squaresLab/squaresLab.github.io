@@ -1,1 +1,6 @@
-Hello, World\!
+---
+title: This is my title
+layout: post
+---
+
+# testing markdown
