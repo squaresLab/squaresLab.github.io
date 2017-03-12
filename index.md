@@ -15,7 +15,7 @@ software. </p>
 <p>*Unofficial Motto: "it's funny, because we're not!"</p>
 <p>**We apologize, sort of, for the egregious backronym.</p>
 
-## Students
+## People
 
 
 ## Projects and code
