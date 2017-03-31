@@ -3,19 +3,27 @@ title: index
 layout: default
 ---
 
-# Welcome to squaresLab@CMU*
+# We Care About Software Quality
 
-<p>squaresLab is led by (Assistant) Professor <a
-href="http://www.clairelegoues.com">Claire Le Goues</a> at Carnegie Mellon's
-School of Computer Science.  We care about Software QUality in Real Evolving
+squaresLab, at <a href="https://http://www.cs.cmu.edu/">Carnegie Mellon's
+School of Computer Science</a>, focuses on Software QUality in Real Evolving
 Systems**. We do research in automated techniques to reason about, assure,
 measure and then improve the quality of real, messy, ever-changing
-software. </p>
+software.
 
-<p>*Unofficial Motto: "it's funny, because we're not!"</p>
-<p>**We apologize, sort of, for the egregious backronym.</p>
+squaresLab@CMU is led by is led by (Assistant) Professor [Claire Le Goues](http://www.clairelegoues.com), and also includes:
 
-## People
+*   Chris Timperley, post-doc extraordinaire
+*   Deby Katz
+*   Zack Coker
+*   Rijnard van Tonder
+*   Mauricio Soto
+*   Afsoon Afzal 
+*   Cody Kinneer
+
+## Recent news
 
 
-## Projects and code
+*Unofficial Motto: "it's funny, because we're not!"<br>
+**We apologize, sort of, for the egregious backronym.
+
