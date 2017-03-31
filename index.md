@@ -1,6 +1,6 @@
 ---
 title: index
-layout: page
+layout: default
 ---
 
 # Welcome to squaresLab@CMU*
