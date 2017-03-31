@@ -1,3 +1,3 @@
-theme: leap-day
+theme: jekyll-theme-leap-day
 name: squaresLab@CMU cite
 permalink: /blog/:year/:month/:day/:title
