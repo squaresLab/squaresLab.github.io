@@ -15,7 +15,7 @@ squaresLab@CMU is led by is led by (Assistant) Professor [Claire Le Goues](http:
 
 *   [Chris Timperley](http://www.christimperley.co.uk), post-doc extraordinaire
 *   [Deby Katz](http://www.cs.cmu.edu/~dskatz/)
-*   Zack Coker
+*   [Zack Coker](http://www.andrew.cmu.edu/user/zfc/)
 *   Rijnard van Tonder
 *   Mauricio Soto
 *   Afsoon Afzal 
