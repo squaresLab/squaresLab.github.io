@@ -7,7 +7,7 @@ layout: default
 
 squaresLab, at <a href="https://http://www.cs.cmu.edu/">Carnegie Mellon's
 School of Computer Science</a>, focuses on Software QUality in Real Evolving
-Systems**. We do research in automated techniques to reason about, assure,
+Systems*. We do research in automated techniques to reason about, assure,
 measure and then improve the quality of real, messy, ever-changing
 software.
 
@@ -24,6 +24,5 @@ squaresLab@CMU is led by is led by (Assistant) Professor [Claire Le Goues](http:
 ## Recent news
 
 
-*Unofficial Motto: "it's funny, because we're not!"<br>
-**We apologize, sort of, for the egregious backronym.
+*We apologize, sort of, for the egregious backronym.
 

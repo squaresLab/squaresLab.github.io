@@ -1,9 +1,14 @@
 ---
-title: research
+title: Projects and code
 layout: default
 ---
 
 # Projects, Code
+
+Here we list our research efforts by subject, linking to code and data
+associated with projects and papers (which you can also see on our [publication
+list](pubs.html).  If you can't find something or think we've forgotten
+anything, please contact us directly or file an issue with this page.
 
 ### Program Repair 
 
@@ -13,20 +18,20 @@ bases to produce high-quality bug patches.
 *  Paper: 
 > Yalin Ke, Kathryn T. Stolee, Claire Le Goues, and Yuriy Brun. Repairing
 > Programs with Semantic Code Search. In Automated Software Engineering (ASE),
-> 2015, pp. 532-543.Slides: [[.pdf]] [doi | bibtex | github]
+> 2015, pp. 532-543.  Slides: [[.pdf]] [doi | bibtex | github]
 
 - Code:
   - Current:
-  - Prototype (associated with the ASE paper, above):
+  - Prototype (associated with the ASE'15 paper):
 
-**GenProg** is a collaborative effort between squaresLab, Wes Weimer (at
-UVA/UMichigan) and Stephanie Forest (UNM), combining stochastic search methods
-like genetic programming with lightweight program analyses to find patches for
-real bugs in extant software. The main website provides an overview; a
-publication list; demo videos; and source code, benchmarks, workloads, and
-experimental reproduction instructions for all GenProg-related research, with
-the exception of:
-*   GenProg4Java
+**GenProg** combines stochastic search methods like genetic programming with
+lightweight program analyses to find patches for real bugs in extant
+software. The [main website](http://genprog.cs.virginia.edu) covers most
+GenProg-related research, with the exception of:
+*   GenProg4Java, a framework for heuristic, generate-and-validate repair on
+Java programs, with especial support for integration with the Defects4J
+dataset.  Implements a Java-oriented version of GenProg, with support for several
+other search heuristics and mutation sets.  
 
 ### (Other) Search-Based Software Engineering efforts
 
