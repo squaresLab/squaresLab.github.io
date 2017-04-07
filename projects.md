@@ -6,8 +6,8 @@ layout: default
 # Projects, Code
 
 Here we list our research efforts by subject, linking to code and data
-associated with various projects/papers.  We still consolidating to this site;
-you may also have luck on [Claire's research page](http://clairelegoues.com/research). If you can't find something or think
+associated with various projects/papers.  As of April 2017, we still consolidating to this site;
+you may also have luck on [Claire's research page](http://clairelegoues.com/research) or by contacting us. If you can't find something or think
 we've forgotten anything, please contact us directly or file an issue with this
 page.
 
