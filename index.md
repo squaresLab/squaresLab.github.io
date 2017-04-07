@@ -21,6 +21,9 @@ squaresLab@CMU is led by is led by (Assistant) Professor [Claire Le Goues](http:
 *   Afsoon Afzal 
 *   Cody Kinneer
 
+
+If you're not sure who to contact, squaresLab can be reached via email: clegoues at cs dot cmu dot edu
+
 ## Recent news
 
 
