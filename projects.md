@@ -59,5 +59,5 @@ The projects in this category deal with mining the history
 of a large number of popular repositories to increase the 
 quality of different attributes desired by developers, 
 such as understanding of bug repair or 
-[code contribution quality](https://github.com/squaresLab/MSR-challenge-2017/blob/master/MSRChallenge2017.pdf).
+[code contribution quality](https://github.com/squaresLab/MSR-challenge-2017).
 
