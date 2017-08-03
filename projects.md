@@ -58,6 +58,6 @@ program repair research. More info at the [repairbenchmarks site](http://repairb
 The projects in this category deal with mining the history 
 of a large number of popular repositories to increase the 
 quality of different attributes desired by developers, 
-such as understanding of bug repairs or 
-[code contribution quality](https://github.com/squaresLab/MSR-challenge-2017).
+such as [understanding of bug repairs](https://github.com/squaresLab/MSRChallenge2016) or
+[maximizing code contribution quality](https://github.com/squaresLab/MSR-challenge-2017).
 
