@@ -55,7 +55,6 @@ program repair research. More info at the [repairbenchmarks site](http://repairb
 
 ### Repository Mining
 
-**Prediction of Contribution Quality**
 The projects in this category deal with mining the history 
 of a large number of popular repositories to increase the 
 quality of different attributes desired by developers, 
