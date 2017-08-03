@@ -53,5 +53,12 @@ more relying on Fedora 13!), primarily through the use of Docker.
 **ManyBugs and IntroClass** are benchmarks intended to support evaluations of
 program repair research. More info at the [repairbenchmarks site](http://repairbenchmarks.cs.umass.edu/).
 
+### Repository Mining
 
+**Prediction of Contribution Quality**
+The projects in this category deal with mining the history 
+of a large number of popular repositories to increase the 
+quality of different attributes desired by developers, 
+such as understanding of bug repair or 
+[code contribution quality](https://github.com/squaresLab/MSR-challenge-2017/blob/master/MSRChallenge2017.pdf).
 
