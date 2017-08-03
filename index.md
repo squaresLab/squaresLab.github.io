@@ -17,7 +17,7 @@ squaresLab@CMU is led by is led by (Assistant) Professor [Claire Le Goues](http:
 *   [Deby Katz](http://www.cs.cmu.edu/~dskatz/)
 *   [Zack Coker](http://www.andrew.cmu.edu/user/zfc/)
 *   Rijnard van Tonder
-*   Mauricio Soto
+*   [Mauricio Soto](http://www.cs.cmu.edu/~msotogon/) 
 *   [Afsoon Afzal](http://www.cs.cmu.edu/~afsoona) 
 *   Cody Kinneer
 
