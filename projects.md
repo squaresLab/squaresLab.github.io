@@ -6,7 +6,7 @@ layout: default
 # Projects, Code
 
 Here we list our research efforts by subject, linking to code and data
-associated with various projects/papers.  As of April 2017, we still consolidating to this site;
+associated with various projects/papers.  We are consolidating to this site incrementally;
 you may also have luck on [Claire's research page](http://clairelegoues.com/research) or by contacting us. If you can't find something or think
 we've forgotten anything, please contact us directly or file an issue with this
 page.
@@ -26,8 +26,9 @@ bases to produce high-quality bug patches.
 
 **GenProg** combines stochastic search methods like genetic programming with
 lightweight program analyses to find patches for real bugs in extant
-software. The [main website](http://genprog.cs.virginia.edu) covers most
-GenProg-related research; a transition to GitHub is in the works as of April, 2017.
+software. The [main website](https://squareslab.github.io/genprog-code)
+ covers most
+GenProg-related research, with links to the various GitHub repositories, results, and reproduction instructions. 
 
 {% comment %}
 , with the exception of:
