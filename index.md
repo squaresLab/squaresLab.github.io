@@ -20,7 +20,7 @@ squaresLab@CMU is led by (Assistant) Professor [Claire Le Goues](http://www.clai
 *   [Mauricio Soto](http://www.cs.cmu.edu/~msotogon/) 
 *   [Afsoon Afzal](http://www.cs.cmu.edu/~afsoona) 
 *   Cody Kinneer
-*   Jeremy Lacomis
+*   [Jeremy Lacomis](http://www.cs.cmu.edu/~jlacomis/)
 
 If you're not sure who to contact, squaresLab can be reached via email: clegoues at cs dot cmu dot edu
 
