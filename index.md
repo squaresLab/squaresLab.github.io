@@ -22,9 +22,13 @@ squaresLab@CMU is led by (Assistant) Professor [Claire Le Goues](http://www.clai
 *   Cody Kinneer
 *   [Jeremy Lacomis](http://www.cs.cmu.edu/~jlacomis/)
 
-If you're not sure who to contact, squaresLab can be reached via email: clegoues at cs dot cmu dot edu
+Past visiting students include:
+* [Xuan Bach Le Dinh](https://sites.google.com/site/xuanbach0789/home), Singapore Management University
+* [Tian Yuan](http://www.mysmu.edu/phdis2012/yuan.tian.2012/), Singapore Management University
+* [Le Bui Tien Duy](https://sites.google.com/site/lebuitienduy), Singapore Management University
+* Pavneet Singh Kochhar, Singapore Management University
 
-## Recent news
+If you're not sure who to contact, squaresLab can be reached via email: clegoues at cs dot cmu dot edu
 
 
 *We apologize, sort of, for the egregious backronym.
