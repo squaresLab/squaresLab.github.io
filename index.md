@@ -11,6 +11,8 @@ Systems*. We do research in automated techniques to reason about, assure,
 measure and then improve the quality of real, messy, ever-changing
 software.
 
+Our public projects can be found at [SquaresLabGitHub](https://github.com/squaresLab) 
+
 squaresLab@CMU is led by (Assistant) Professor [Claire Le Goues](http://www.clairelegoues.com), and also includes:
 
 *   [Chris Timperley](http://www.christimperley.co.uk), post-doc extraordinaire
