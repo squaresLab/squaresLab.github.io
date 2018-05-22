@@ -1,4 +1,5 @@
 ---
+![SquaresLab Logo] (https://github.com/squaresLab/logos/blob/master/EPS/SquaresLogo_3color.eps)
 title: index
 layout: default
 ---
