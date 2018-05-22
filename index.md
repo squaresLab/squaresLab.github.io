@@ -1,7 +1,6 @@
 ---
 title: index
 layout: default
-img: https://github.com/squaresLab/logos/blob/master/PNG/SquaresLogo_3color.eps
 ---
 
 ![Group photo from axe throwing social event]({{ site.url }}/images/GroupAxePhoto.jpg)
