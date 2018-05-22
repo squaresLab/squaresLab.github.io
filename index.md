@@ -21,7 +21,7 @@ squaresLab@CMU is led by (Assistant) Professor [Claire Le Goues](http://www.clai
 * [Rijnard van Tonder](http://www.cs.cmu.edu/~rvantond/)
 * [Mauricio Soto](http://www.cs.cmu.edu/~msotogon/) 
 *   [Afsoon Afzal](http://www.cs.cmu.edu/~afsoona) 
-*   Cody Kinneer
+*   [Cody Kinneer] (http://kinneerc.github.io)
 *   [Jeremy Lacomis](http://www.cs.cmu.edu/~jlacomis/)
 
 Past visiting students include:
