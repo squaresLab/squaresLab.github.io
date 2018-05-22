@@ -3,7 +3,7 @@ title: index
 layout: default
 ---
 
-![Group photo from axe throwing social event](https://raw.githubusercontent.com/squaresLab/squaresLab.github.io.git/images/GroupAxePhoto.jpg)
+![Group photo from axe throwing social event]({{ site.url }}/images/GroupAxePhoto.jpg)
 
 # We Care About Software Quality
 
