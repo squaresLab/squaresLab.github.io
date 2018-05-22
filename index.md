@@ -3,6 +3,8 @@ title: index
 layout: default
 ---
 
+![Group photo from axe throwing social event](https://raw.githubusercontent.com/squaresLab/squaresLab.github.io.git/images/GroupAxePhoto.jpg)
+
 # We Care About Software Quality
 
 squaresLab, at <a href="https://http://www.cs.cmu.edu/">Carnegie Mellon's
