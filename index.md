@@ -1,5 +1,5 @@
 ---
-![SquaresLab Logo] (https://github.com/squaresLab/logos/blob/master/PNG/SquaresLogo_3color.eps)
+![SquaresLab Logo](https://github.com/squaresLab/logos/blob/master/PNG/SquaresLogo_3color.eps)
 title: index
 layout: default
 ---
