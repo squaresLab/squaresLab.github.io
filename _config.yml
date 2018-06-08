@@ -1,8 +1,7 @@
-theme: jekyll-theme-slate
 name: squaresLab@CMU cite
 permalink: /blog/:year/:month/:day/:title
 
-title: squaresLab
+title: squaresLab@CMU
 description: "Software QUality in Real and Evolving Systems Lab at Carnegie
 Mellon University"
 baseurl: ""

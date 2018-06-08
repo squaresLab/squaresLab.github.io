@@ -1,9 +1,9 @@
 ---
 title: index
-layout: default
+layout: index
 ---
 
-![Group photo from axe throwing social event]({{ site.url }}/images/GroupAxePhoto.jpg)
+<img src="{{ site.url }}/images/GroupAxePhoto.jpg" alt="group photo" width="400px"/>
 
 # We Care About Software Quality
 

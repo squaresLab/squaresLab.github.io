@@ -1,6 +1,7 @@
 ---
 title: Projects and code
 layout: default
+permalink: /projects/
 ---
 
 # Projects, Code
