@@ -1,6 +1,6 @@
 ---
 title: index
-layout: index
+layout: default
 ---
 
 <img src="{{ site.url }}/images/GroupAxePhoto.jpg" alt="group photo" width="400px"/>
