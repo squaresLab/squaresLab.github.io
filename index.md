@@ -9,7 +9,7 @@ layout: default
 
 squaresLab, at [Carnegie Mellon's School of Computer
 Science](https://http://www.cs.cmu.edu/), focuses on **S**oftware **QU**ality in
-**R**eal **E**volving **S**ystems. We do research in automated techniques to
+**R**eal **E**volving **S**ystems.* We do research in automated techniques to
 reason about, assure, measure and then improve the quality of real, messy,
 ever-changing software.
 
