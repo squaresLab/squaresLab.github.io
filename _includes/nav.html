@@ -1,9 +1,12 @@
 <!-- Navbar -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <img src="{{ "/assets/img/SquaresLogo_3color_no_text_small.png" | prepend:
-                                                                 site.baseurl }}" class="navbar-logo">
-  <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">squaresLab</a>
+  <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">
+    <img src="{{ "/assets/img/SquaresLogo_3color_no_text_small.png" | prepend:
+                                                                   site.baseurl
+    }}" class="navbar-logo" width="30" height="30">
+    squaresLab
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
