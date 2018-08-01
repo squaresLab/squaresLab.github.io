@@ -5,7 +5,8 @@ branches:
   only:
   - update
 script:
-- ./push.sh
+- bundle exec jekyll build
+- ./deploy.sh
 notifications:
   email: false
 env:
