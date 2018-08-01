@@ -5,7 +5,7 @@ branches:
   only:
   - update
 script:
-- bundle exec rake deploy
+- ./push.sh
 notifications:
   email: false
 env:
