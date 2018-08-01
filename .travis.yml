@@ -1,0 +1,12 @@
+language: ruby
+before_install:
+  - git config --global user.name "Travis Auto Deploy"
+install:
+  - bundle install
+branches:
+  only:
+    - develop
+script:
+  - bundle exec rake deploy
+notifications:
+  email: false
