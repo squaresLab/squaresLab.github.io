@@ -1,5 +1,5 @@
 ---
-title: Projects and code
+title: Projects
 layout: default
 permalink: /projects/
 ---

@@ -1,26 +1,37 @@
 <!-- Navbar -->
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ "/"  | prepend: site.baseurl }}">{{
-        site.title }}</a>
-      <img src="{{ "/assets/img/SquaresLogo_3color_no_text_small.png" | prepend:
-      site.baseurl }}" class="navbar-logo">
-    </div>
-    <div class="navbar-collapse collapse navbar-right">
-      <ul class="nav navbar-nav">
-        <!-- <li {% if page.title == "People" %}class="active"{% endif %}><a href="{{"/people/" | prepend: site.baseurl }}">PEOPLE</a></li> -->
-        <li {% if page.title == "Projects" %}class="active"{% endif %}><a href="{{"/projects/" | prepend: site.baseurl }}">PROJECTS</a></li>
-        <li {% if page.title == "Publications" %}class="active"{% endif %}><a href="{{"/publications/" | prepend: site.baseurl }}">PUBLICATIONS</a></li>
-        <!-- <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="{{"/contact/" | prepend: site.baseurl }}">CONTACT</a></li> -->
-      </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="{{ "/assets/img/SquaresLogo_3color_no_text_small.png" | prepend:
+                                                                 site.baseurl }}" class="navbar-logo">
+  <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">squaresLab</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ "/" | prepend: site.baseurl }}">
+          Home
+        </a>
+      </li>
+      <li class="nav-item" >
+        {% if page.title == "Projects" %}
+        <a class="nav-link disabled" href="">
+        {% else %}
+        <a class="nav-link" href="{{"/projects/" | prepend: site.baseurl }}">
+        {% endif %}
+        Projects
+        </a>
+      </li>
+      <li class="nav-item" >
+        {% if page.title == "Publications" %}
+        <a class="nav-link disabled" href="">
+        {% else %}
+        <a class="nav-link" href="{{"/publications/" | prepend: site.baseurl }}">
+        {% endif %}
+        Publications
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
