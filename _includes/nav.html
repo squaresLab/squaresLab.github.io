@@ -10,29 +10,24 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      {% if page.title == "Projects" %}
       <li class="nav-item active">
-        <a class="nav-link" href="{{ "/" | prepend: site.baseurl }}">
-          Home
-        </a>
-      </li>
-      <li class="nav-item" >
-        {% if page.title == "Projects" %}
-        <a class="nav-link disabled" href="">
         {% else %}
+      <li class="nav-item">
+        {% endif %}
         <a class="nav-link" href="{{"/projects/" | prepend: site.baseurl }}">
-        {% endif %}
-        Projects
+          Projects
         </a>
       </li>
-      <li class="nav-item" >
-        {% if page.title == "Publications" %}
-        <a class="nav-link disabled" href="">
-        {% else %}
+      {% if page.title == "Publications" %}
+      <li class="nav-item active">
+      {% else %}
+      <li class="nav-item">
+      {% endif %}
         <a class="nav-link" href="{{"/publications/" | prepend: site.baseurl }}">
-        {% endif %}
-        Publications
+          Publications
         </a>
       </li>
     </ul>
