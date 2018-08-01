@@ -3,6 +3,7 @@ title: squaresLab
 layout: default
 ---
 
+
 <img src="{{ site.url }}/images/GroupAxePhoto.jpg" alt="group photo" width="400px"/>
 
 # We Care About Software Quality
