@@ -1,6 +1,4 @@
 language: ruby
-before_install:
-- git config --global user.name "Travis Auto Deploy"
 install:
 - bundle install
 branches:
