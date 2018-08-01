@@ -10,7 +10,7 @@ setup_git() {
 }
 
 commit_site_files() {
-    git worktree add -b "build-$TRAVIS_BUILD_NUMBER" _site test
+    git worktree add -b "build-$TRAVIS_BUILD_NUMBER" _site origin/update
     bundle exec jekyll build
     cd _site
     git add .
