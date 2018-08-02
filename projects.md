@@ -7,11 +7,9 @@ permalink: /projects/
 # Projects, Code
 
 Here we list our research efforts by subject, linking to code and data
-associated with various projects/papers.  We are consolidating to this site
-incrementally; you may also have luck on [Claire's research
-page](http://clairelegoues.com/research) or by contacting us. If you can't find
-something or think we've forgotten anything, please contact us directly or file
-an issue with this page.
+associated with various projects/papers. If you can't find something or think
+we've forgotten anything, please contact us directly or file an issue with this
+page.
 
 ---
 
