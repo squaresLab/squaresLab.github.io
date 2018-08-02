@@ -12,4 +12,4 @@ By default, Bibtex will butcher Claire's last name (turning her into Goues,
 C.L.); we always appreciate judiciously applied brackets ({Le Goues}) or a
 non-breaking space (Le~Goues).
 
-{% bibliography -g year --group_order descending %}
+{% bibliography -g year %}

@@ -7,29 +7,24 @@ permalink: /projects/
 # Projects, Code
 
 Here we list our research efforts by subject, linking to code and data
-associated with various projects/papers.  We are consolidating to this site incrementally;
-you may also have luck on [Claire's research page](http://clairelegoues.com/research) or by contacting us. If you can't find something or think
-we've forgotten anything, please contact us directly or file an issue with this
-page.
+associated with various projects/papers.  We are consolidating to this site
+incrementally; you may also have luck on [Claire's research
+page](http://clairelegoues.com/research) or by contacting us. If you can't find
+something or think we've forgotten anything, please contact us directly or file
+an issue with this page.
 
-### Program Repair 
+### Program Repair
 
-**SearchRepair** Extends and uses semantic code search over large repositories of candidate code
-bases to produce high-quality bug patches.
+**SearchRepair** extends and uses semantic code search over large repositories
+of candidate code bases to produce high-quality bug patches.
 
-*  Paper: 
-> Yalin Ke, Kathryn T. Stolee, Claire Le Goues, and Yuriy Brun. [Repairing
-> Programs with Semantic Code Search](http://www.cs.cmu.edu/~clegoues/docs/searchRepair-ase15.pdf). In
-> Automated Software Engineering (ASE),  2015, pp. 532-543.  Slides: [[[.pdf](http://www.cs.cmu.edu/~clegoues/docs/slides/ase15-clg-presentation-forpdf.pdf)]] [[doi](http://dx.doi.org/10.1109/ASE.2015.60) | [bibtex](http://www.cs.cmu.edu/~clegoues/docs/bib/ke15ase.bib)]
-
-- Code: _Contact us if you'd like to extend SearchRepair; we can point you to our better prototype._
-  - Prototype from the ASE'15 paper: [https://github.com/ProgramRepair/SearchRepair](https://github.com/ProgramRepair/SearchRepair)
+- {% reference KeSearchRepair2015 %}
 
 **GenProg** combines stochastic search methods like genetic programming with
 lightweight program analyses to find patches for real bugs in extant
-software. The [main website](https://squareslab.github.io/genprog-code)
- covers most
-GenProg-related research, with links to the various GitHub repositories, results, and reproduction instructions. 
+software. The [main website](https://squareslab.github.io/genprog-code) covers
+most GenProg-related research, with links to the various GitHub repositories,
+results, and reproduction instructions.
 
 {% comment %}
 , with the exception of:
