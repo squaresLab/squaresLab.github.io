@@ -13,24 +13,30 @@ page](http://clairelegoues.com/research) or by contacting us. If you can't find
 something or think we've forgotten anything, please contact us directly or file
 an issue with this page.
 
+---
+
 ## Program Repair
 
 #### SearchRepair
-extends and uses semantic code search over large repositories of candidate code
-bases to produce high-quality bug patches.
+SearchRepair extends and uses semantic code search over large repositories of
+candidate code bases to produce high-quality bug patches.
 
 **Publications:**
 - {% reference KeSearchRepair2015 %}
 
 #### GenProg
-combines stochastic search methods like genetic programming with lightweight
-program analyses to find patches for real bugs in extant software. The [GenProg
-website](https://squareslab.github.io/genprog-code) covers most GenProg-related
-research, with links to the various GitHub repositories, results, and
-reproduction instructions.
+GenProg combines stochastic search methods like genetic programming with
+lightweight program analyses to find patches for real bugs in extant
+software. The [GenProg website](https://squareslab.github.io/genprog-code)
+covers most GenProg-related research, with links to the various GitHub
+repositories, results, and reproduction instructions.
 
-**Publications:**
+**Related squaresLab Publications:**
+- {% reference OliveiraCrossover2016 %}
 - {% reference LeGouesManyBugs2015 %}
+- {% reference SmithOverfitting2015 %}
+
+---
 
 ## Benchmarks and tools for empirical evaluations
 
@@ -48,8 +54,14 @@ in modern environments (no
 more relying on Fedora 13!), primarily through the use of Docker.
 
 #### ManyBugs and IntroClass
-are benchmarks intended to support evaluations of program repair research. More
-info at the [repairbenchmarks site](http://repairbenchmarks.cs.umass.edu/).
+ManyBugs and IntroClass are benchmarks intended to support evaluations of
+program repair research. More info at the [repairbenchmarks
+site](http://repairbenchmarks.cs.umass.edu/).
+
+**Publications:**
+- {% reference LeGouesManyBugs2015 %}
+
+---
 
 ## Repository Mining
 
@@ -59,3 +71,9 @@ developers, such as [understanding of bug
 repairs](https://github.com/squaresLab/MSRChallenge2016) or [maximizing code
 contribution quality](https://github.com/squaresLab/MSR-challenge-2017).
 
+**Publications:**
+- {% reference SotoMSRChallenge2018 %}
+- {% reference AfzalMSRChallenge2018 %}
+- {% reference SotoMSRChallenge2017 %}
+- {% reference KerryExceptions2016 %}
+- {% reference SotoMSRChallenge2016 %}
