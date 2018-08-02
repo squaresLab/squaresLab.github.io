@@ -5,8 +5,8 @@ Adding your paper is now easy! Just drop a BibTeX entry in
 have a PDF of the paper, slides, or a poster just drop them in the `materials`
 directory, naming them `key.pdf`, `key.slides.pdf`, and `key.poster.pdf`
 respectively. Jekyll-Scholar will automatically pick these up and add the
-appropriate links. Note: The site is only refreshed every few mintues, so 
-you may have to wait a bit to see your changes.
+appropriate links. Note: The site is refreshed every few mintues, so 
+you may have to wait to see your changes.
 
 Code, data, tools, and results should be served from a non-GitHub server. You
 can add links to these by adding `code`, `data`, `tools`, or `results` fields to
