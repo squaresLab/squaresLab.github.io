@@ -5,23 +5,58 @@
   <p>
     <tr>
       <td valign="top"><span class="abbrv">{{entry.abbrv}}</span></td>
-      <td><div class="reference">
+      <td>
+        <div class="reference">
           {{ reference }}
         </div>
         <span class="refs-link">
           <a href="javascript:void(0)" onclick="$('#bibtex-entry-{{key}}').slideToggle();">BibTeX</a>
         </span>
-        {% if entry.doi %} &middot; <span class="refs-link"><a href="{{entry.doi}}">DOI</a></span> {% endif %}
-        {% if entry.pdf %} &middot; <span class="refs-link">
-          <a href="../papers/{{entry.pdf}}">PDF</a></span> {% endif %}
-        {% if entry.slides %} &middot; <span class="refs-link"><a href="{{entry.slides}}">Slides</a></span> {% endif %}
-        {% if entry.poster %} &middot; <span class="refs-link"><a href="{{entry.poster}}">Poster</a></span> {% endif %}
-        {% if entry.data %} &middot; <span class="refs-link"><a href="{{entry.data}}">Data</a></span> {% endif %}
-        {% if entry.tool %} &middot; <span class="refs-link"><a href="{{entry.tool}}">Tool</a></span> {% endif %}
+        {% if entry.doi %}
+        &middot; <span class="refs-link">
+          <a href="{{entry.doi}}">DOI</a>
+        </span>
+        {% endif %}
+        {% if links.pdf %}
+        &middot; <span class="refs-link">
+          <a href="{{links.pdf}}">PDF</a>
+        </span>
+        {% endif %}
+        {% if links['slides.pdf'] %}
+        &middot; <span class="refs-link">
+          <a href="{{links['slides.pdf']}}">Slides</a>
+        </span>
+        {% endif %}
+        {% if links['poster.pdf'] %}
+        &middot; <span class="refs-link">
+          <a href="{{links['poster.pdf']}}">Poster</a>
+        </span>
+        {% endif %}
+        {% if entry.code %}
+        &middot; <span class="refs-link">
+          <a href="{{entry.code}}">Code</a>
+        </span>
+        {% endif %}
+        {% if entry.tool %}
+        &middot; <span class="refs-link">
+          <a href="{{entry.tool}}">Tool</a>
+        </span>
+        {% endif %}
+        {% if entry.data %}
+        &middot; <span class="refs-link">
+          <a href="{{entry.data}}">Data</a>
+        </span>
+        {% endif %}
+        {% if entry.results %}
+        &middot; <span class="refs-link">
+          <a href="{{entry.results}}">Results</a>
+        </span>
+        {% endif %}
         <div class="bibtex noshow" style="width:600px;overflow:auto">
   	      <pre class="bibtex-entry" id="bibtex-entry-{{key}}" style="display:
                                                                      none;">
-{{ entry.bibtex }}</pre>
+{{ entry.bibtex }}
+          </pre>
         </div>
       </td>
     </tr>

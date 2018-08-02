@@ -47,8 +47,9 @@ scholar:
   style: bib.csl
   locale: en
 
-  sort_by: year
+  sort_by: year, month
   order: descending
+  group_order: descending
 
   source: ./_bibliography
   bibliography: publications.bib
@@ -63,7 +64,9 @@ scholar:
   replace_strings: true
   join_strings:    true
 
-  bibtex_skip_fields: [pdf, slides, poster, data, tool]
+  bibtex_skip_fields: [code, data, tool, results]
+
+  repository: materials
 
   #details_dir:    bibliography
   #details_layout: bibtex.html
