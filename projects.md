@@ -24,13 +24,13 @@ bases to produce high-quality bug patches.
 
 #### GenProg
 combines stochastic search methods like genetic programming with lightweight
-program analyses to find patches for real bugs in extant software. The [main
+program analyses to find patches for real bugs in extant software. The [GenProg
 website](https://squareslab.github.io/genprog-code) covers most GenProg-related
 research, with links to the various GitHub repositories, results, and
 reproduction instructions.
 
 **Publications:**
-- {% reference WeimerGenprog2009 %}
+- {% reference LeGouesManyBugs2015 %}
 
 ## Benchmarks and tools for empirical evaluations
 
