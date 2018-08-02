@@ -7,9 +7,9 @@ directory, naming them `key.pdf`, `key.slides.pdf`, and `key.poster.pdf`
 respectively. Jekyll-Scholar will automatically pick these up and add the
 appropriate links.
 
-Code, data, and tools should be served from a non-GitHub server. You can add
-links to these by adding `code`, `data`, or `tools` fields to the BibTeX
-entries.
+Code, data, tools, and results should be served from a non-GitHub server. You
+can add links to these by adding `code`, `data`, `tools`, or `results` fields to
+the BibTeX entries.
 
 ## Inserting a reference on a page
 

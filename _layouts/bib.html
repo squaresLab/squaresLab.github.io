@@ -47,6 +47,11 @@
           <a href="{{entry.data}}">Data</a>
         </span>
         {% endif %}
+        {% if entry.results %}
+        &middot; <span class="refs-link">
+          <a href="{{entry.results}}">Results</a>
+        </span>
+        {% endif %}
         <div class="bibtex noshow" style="width:600px;overflow:auto">
   	      <pre class="bibtex-entry" id="bibtex-entry-{{key}}" style="display:
                                                                      none;">

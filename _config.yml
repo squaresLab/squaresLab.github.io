@@ -64,7 +64,7 @@ scholar:
   replace_strings: true
   join_strings:    true
 
-  bibtex_skip_fields: [code, data, tool]
+  bibtex_skip_fields: [code, data, tool, results]
 
   repository: materials
 
