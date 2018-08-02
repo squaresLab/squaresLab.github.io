@@ -2,9 +2,8 @@
 title: squaresLab
 layout: default
 ---
-
-
-<img src="{{ site.url }}/images/GroupAxePhoto.jpg" alt="group photo" width="400px"/>
+<img src="{{ site.url }}/images/GroupAxePhoto.jpg" alt="group photo"
+style="width:100%; height:auto;"/>
 
 # We Care About Software Quality
 
