@@ -29,8 +29,7 @@ Goues](http://www.clairelegoues.com), and also includes:
 *   [Jeremy Lacomis](http://www.cs.cmu.edu/~jlacomis/)
 
 Past visiting students include:
-* [Xuan Bach Le Dinh](https://sites.google.com/site/xuanbach0789/home),
-  Singapore Management University
+* Xuan Bach Le Dinh, Singapore Management University
 * [Tian Yuan](http://www.mysmu.edu/phdis2012/yuan.tian.2012/), Singapore
   Management University
 * [Le Bui Tien Duy](https://sites.google.com/site/lebuitienduy), Singapore
