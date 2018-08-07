@@ -1,4 +1,3 @@
-### Status
 [![Build Status](https://travis-ci.org/squaresLab/squaresLab.github.io.svg?branch=update)](https://travis-ci.org/squaresLab/squaresLab.github.io)
 
 ## Adding your paper to the squaresLab site
