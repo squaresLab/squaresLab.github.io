@@ -1,3 +1,6 @@
+### Status
+[![Build Status](https://travis-ci.org/squaresLab/squaresLab.github.io.svg?branch=update)](https://travis-ci.org/squaresLab/squaresLab.github.io)
+
 ## Adding your paper to the squaresLab site
 
 Adding your paper is now easy! Just drop a BibTeX entry in
