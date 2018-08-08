@@ -16,7 +16,26 @@
         {% endif %}
         {% if links['slides.pdf'] %}
         {% if first %}{% assign first = false %}{% else %}&middot; {% endif %}<span class="refs-link">
-          <a href="{{links['slides.pdf']}}"><i class="fas fa-chart-pie"></i> Slides</a>
+          <a href="{{links['slides.pdf']}}"><i class="fas fa-chart-pie"></i>
+          Slides (PDF)</a>
+        </span>
+        {% endif %}
+        {% if links['slides.pptx'] %}
+        {% if first %}{% assign first = false %}{% else %}&middot; {% endif %}<span class="refs-link">
+          <a href="{{links['slides.pptx']}}"><i class="fas fa-chart-pie"></i>
+          Slides (PowerPoint)</a>
+        </span>
+        {% endif %}
+        {% if links['slides.key'] %}
+        {% if first %}{% assign first = false %}{% else %}&middot; {% endif %}<span class="refs-link">
+          <a href="{{links['slides.key']}}"><i class="fas fa-chart-pie"></i>
+          Slides (Keynote)</a>
+        </span>
+        {% endif %}
+        {% if links['slides.odp'] %}
+        {% if first %}{% assign first = false %}{% else %}&middot; {% endif %}<span class="refs-link">
+          <a href="{{links['slides.odp']}}"><i class="fas fa-chart-pie"></i>
+          Slides (OpenOffice)</a>
         </span>
         {% endif %}
         {% if links['poster.pdf'] %}
