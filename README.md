@@ -22,3 +22,11 @@ the website from `master` and that branch is updated automatically.
 It is also possible to insert a reference on a page using the `reference` Liquid
 tag. For an example, see SearchRepair on the Projects page. The format of the
 tag is `{% reference key %}`.
+
+## Test your changes
+
+Before pushing to the website, you may want to check that your changes look the way you expect. Just run the website locally with:
+```
+bundle exec jekyll serve
+```
+You can then see the website, typically at `127.0.0.1:4000`. (You may need to `bundle install` first)
