@@ -65,7 +65,7 @@ site](http://repairbenchmarks.cs.umass.edu/).
 
 The projects in this category deal with mining the history of a large number of
 popular repositories to increase the quality of different attributes desired by
-developers, such as [understanding of bug
+developers, such as [understanding bug
 repairs](https://github.com/squaresLab/MSRChallenge2016) or [maximizing code
 contribution quality](https://github.com/squaresLab/MSR-challenge-2017).
 
