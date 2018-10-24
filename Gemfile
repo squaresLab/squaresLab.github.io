@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'unicode'
 gem 'jekyll', '~> 3.4', '>= 3.4.3'
 gem "rake", "~> 10.1.1"
 gem "rake-jekyll"
