@@ -32,7 +32,7 @@ of the other items.
 ## Changing the css of all pages
 
 If you would like to add a css change across all pages, you can add a css rule
-assets/css/customCss.css.
+in assets/css/customCss.css.
 
 ## Test your changes
 
