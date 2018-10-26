@@ -20,7 +20,7 @@ page.
 SearchRepair extends and uses semantic code search over large repositories of
 candidate code bases to produce high-quality bug patches.
 
-**Publications:**
+**Related Publications:**
 - [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#KeSearchRepair2015)
 
 #### GenProg
@@ -30,10 +30,10 @@ software. The [GenProg website](https://squareslab.github.io/genprog-code)
 covers most GenProg-related research, with links to the various GitHub
 repositories, results, and reproduction instructions.
 
-**Related squaresLab Publications:**
-- {% reference OliveiraCrossover2016 %}
-- {% reference LeGouesManyBugs2015 %}
-- {% reference SmithOverfitting2015 %}
+**Related Publications:**
+- [Improved Crossover Operators for Genetic Programming for Program Repair](/publications/#OliveiraCrossover2016)
+- [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#LeGouesManyBugs2015)
+- [Is the Cure Worse than the Disease?  Overfitting in Automated Program Repair](/publications/#SmithOverfitting2015)
 
 ---
 
@@ -57,8 +57,8 @@ ManyBugs and IntroClass are benchmarks intended to support evaluations of
 program repair research. More info at the [repairbenchmarks
 site](http://repairbenchmarks.cs.umass.edu/).
 
-**Publications:**
-- {% reference LeGouesManyBugs2015 %}
+**Related Publications:**
+- [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#LeGouesManyBugs2015)
 
 ---
 
@@ -70,10 +70,10 @@ developers, such as [understanding bug
 repairs](https://github.com/squaresLab/MSRChallenge2016) or [maximizing code
 contribution quality](https://github.com/squaresLab/MSR-challenge-2017).
 
-**Publications:**
-- {% reference SotoProbabilistic2018 %} [Repo](https://github.com/squaresLab/ProbabilisticModelSaner2018)
-- {% reference SotoMSRChallenge2018 %}
-- {% reference AfzalMSRChallenge2018 %}
-- {% reference SotoMSRChallenge2017 %}
-- {% reference KerryExceptions2016 %}
-- {% reference SotoMSRChallenge2016 %}
+**Related Publications:**
+- [Using a Probabilistic Model to Predict Bug Fixes](/publications/#SotoProbabilistic2018)
+- [Common Statement Kind Changes to Inform Automatic Program Repair](/publications/#SotoMSRChallenge2018)
+- [A Study on the Use of IDE Features for Debugging](/publications/#AfzalMSRChallenge2018)
+- [Analyzing the Impact of Social Attributes on Commit Integration Success](/publications/#SotoMSRChallenge2017)
+- [Examining Programmer Practices for Locally Handling Exceptions](/publications/#KerryExceptions2016)
+- [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
