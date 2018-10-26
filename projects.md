@@ -89,6 +89,7 @@ software was able to automatically adapt to its environment.
 
 **Related Publications:**
 - [SASS: Self-adaptation Using Stochastic Search](/publications/#CokerSASS2015)
+
 ---
 
 ## Java Sandbox
