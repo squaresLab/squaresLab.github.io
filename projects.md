@@ -70,6 +70,7 @@ repairs](https://github.com/squaresLab/MSRChallenge2016) or [maximizing code
 contribution quality](https://github.com/squaresLab/MSR-challenge-2017).
 
 **Publications:**
+- {% reference SotoProbabilistic2018 %}
 - {% reference SotoMSRChallenge2018 %}
 - {% reference AfzalMSRChallenge2018 %}
 - {% reference SotoMSRChallenge2017 %}
