@@ -37,7 +37,7 @@ repositories, results, and reproduction instructions.
 
 ---
 
-## Benchmarks and tools for empirical evaluations
+## Benchmarks and Tools for Empirical Evaluations
 
 Many of our projects involve running analyses or tools on real code, often
 containing bugs.  We therefore have several datasets, benchmarks, and pieces of
@@ -77,3 +77,26 @@ contribution quality](https://github.com/squaresLab/MSR-challenge-2017).
 - [Analyzing the Impact of Social Attributes on Commit Integration Success](/publications/#SotoMSRChallenge2017)
 - [Examining Programmer Practices for Locally Handling Exceptions](/publications/#KerryExceptions2016)
 - [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
+
+---
+
+## Self-adaptive Systems
+
+The environment in which software systems run are constantly changing.
+The maintenance efforts on these systems would be significantly reduced if 
+software was able to automatically adapt to its environment.
+
+
+**Related Publications:**
+- [SASS: Self-adaptation Using Stochastic Search](/publications/#CokerSASS2015)
+---
+
+## Java Sandbox
+
+We have investigated the challenges of using the Java Sandbox in an
+application. This work motivates possible improvements to the Java Sandbox and 
+discusses the architectural constraint the Java Sandbox is used to enforce in
+practice.
+
+**Related Publications:**
+- [Evaluating the Flexibility of the Java Sandbox](/publications/#CokerEvaluating2015)
