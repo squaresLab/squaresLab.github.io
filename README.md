@@ -16,6 +16,8 @@ page. You
 can add links to these by adding `code`, `data`, `tools`, or `results` fields to
 the BibTeX entries.
 
+Also, remember to add your paper to the projects page by editing the projects.md file.
+
 **NOTE**: Updates should be pushed to `update` and not `master`. GitHub serves
 the website from `master` and that branch is updated automatically.
 
