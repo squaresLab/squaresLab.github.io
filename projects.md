@@ -8,7 +8,7 @@ permalink: /projects/
 
 Here we list our research efforts by subject, linked to the section in the 
 publication page that further links to the materials (code, slides, etc.) 
-associated with each project . If you can't find something or think
+associated with each project. If you can't find something or think
 we've forgotten anything, please contact us directly or file an issue with this
 page.
 
