@@ -10,7 +10,9 @@ them in the `materials` directory, naming them `key.pdf`, `key.slides.pdf`, and
 and add the appropriate links. Note: The site is refreshed every few minutes, so
 you may have to wait to see your changes.
 
-Code, data, tools, and results should be served from a non-GitHub server. You
+Code, data, tools, and large results should be not be directly served from this
+site. Instead, the files should be hosted on another site and linked to on our
+page. You
 can add links to these by adding `code`, `data`, `tools`, or `results` fields to
 the BibTeX entries.
 
