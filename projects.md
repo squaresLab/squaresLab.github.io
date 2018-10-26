@@ -4,10 +4,11 @@ layout: default
 permalink: /projects/
 ---
 
-# Projects, Code
+# Projects
 
-Here we list our research efforts by subject, linking to code and data
-associated with various projects/papers. If you can't find something or think
+Here we list our research efforts by subject, linked to the section in the 
+publication page that further links to the materials (code, slides, etc.) 
+associated with each project . If you can't find something or think
 we've forgotten anything, please contact us directly or file an issue with this
 page.
 
