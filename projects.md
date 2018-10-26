@@ -20,7 +20,7 @@ SearchRepair extends and uses semantic code search over large repositories of
 candidate code bases to produce high-quality bug patches.
 
 **Publications:**
-- {% reference KeSearchRepair2015 %}
+- [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#KeSearchRepair2015)
 
 #### GenProg
 GenProg combines stochastic search methods like genetic programming with
