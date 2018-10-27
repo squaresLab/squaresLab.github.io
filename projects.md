@@ -88,6 +88,7 @@ software was able to automatically adapt to its environment.
 
 
 **Related Publications:**
+- [Managing Uncertainty in Self-Adaptive Systems with Plan Resue and Stochastic Search](/publications/#KinnerManaging2018)
 - [SASS: Self-adaptation Using Stochastic Search](/publications/#CokerSASS2015)
 
 ---
