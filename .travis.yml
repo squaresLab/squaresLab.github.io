@@ -1,6 +1,6 @@
 language: ruby
 install:
-- gem install bundler==2.0.1
+- gem install bundler
 - bundle install
 branches:
   only:
