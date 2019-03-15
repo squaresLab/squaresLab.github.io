@@ -27,13 +27,18 @@ Goues](http://www.clairelegoues.com), and also includes:
 *   [Cody Kinneer](http://kinneerc.github.io)
 *   [Jeremy Lacomis](http://www.cs.cmu.edu/~jlacomis/)
 
+Our present undergraduate researchers are:
+*   Yiwei Lyu, Carnegie Mellon University
+*   Zhen Yu Ding, University of Pittsburgh
+
 Past visiting students include:
-* Xuan Bach Le Dinh, Singapore Management University
-* [Tian Yuan](http://www.mysmu.edu/phdis2012/yuan.tian.2012/), Singapore
-  Management University
+* [Xuan Bach Le Dinh](https://xuanbachle.github.io/), University of Melbourne (Australia)
+* [Tian Yuan](http://sophiaytian.com/), Queen's University (Canada)
 * [Le Bui Tien Duy](https://sites.google.com/site/lebuitienduy), Singapore
   Management University
-* Pavneet Singh Kochhar, Singapore Management University
+* [Pavneet Singh Kochhar](https://kochharps.wixsite.com/pavneet), Microsoft (Canada) 
+
+Our previous undergraduate researchers include:
 
 If you're not sure who to contact, squaresLab can be reached via email: clegoues
 at cs dot cmu dot edu
