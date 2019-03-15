@@ -1,10 +1,10 @@
 ---
-title: Projects
+title: Research
 layout: default
-permalink: /projects/
+permalink: /research/
 ---
 
-# Projects
+# Research
 
 Here we list our research efforts by subject, linked to the section in the 
 publication page that further links to the materials (code, slides, etc.) 
