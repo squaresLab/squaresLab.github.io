@@ -12,21 +12,21 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      {% if page.title == "Projects" %}
+      {% if page.title == "Research" %}
       <li class="nav-item active">
         {% else %}
       <li class="nav-item">
         {% endif %}
-        <a class="nav-link" href="{{"/projects/" | prepend: site.baseurl }}">
-          Projects
+        <a class="nav-link" href="{{"/research/" | prepend: site.baseurl }}">
+          Research
         </a>
       </li>
-      {% if page.title == "Research" %}
+      {% if page.title == "Publications" %}
       <li class="nav-item active">
       {% else %}
       <li class="nav-item">
       {% endif %}
-        <a class="nav-link" href="{{"/research/" | prepend: site.baseurl }}">
+        <a class="nav-link" href="{{"/publications/" | prepend: site.baseurl }}">
           Publications
         </a>
       </li>
