@@ -7,10 +7,10 @@ permalink: /research/
 # Research
 
 Here we list our research efforts by subject, linked to the section in the
-publication page that further links to the materials (code, slides, etc.)
-associated with each project. If you can't find something or think
-we've forgotten anything, please contact us directly or file an issue with this
-page at [https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
+publication page that further links to the materials associated with each
+project. If you can't find something or think we've forgotten anything, please
+contact us directly or file an issue with this page at
+[https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
 
 ---
 
@@ -67,17 +67,6 @@ site](http://repairbenchmarks.cs.umass.edu/).
 - [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
 
 ## Robotics Software QA/Bug Testing
-## AI/Search-Based Software Engineering
-The environment in which software systems run are constantly changing.
-The maintenance efforts on these systems would be significantly reduced if
-software was able to automatically adapt to its environment.
-
-
-**Related Publications:**
-- [Managing Uncertainty in Self-Adaptive Systems with Plan Resue and Stochastic Search](/publications/#KinneerManaging2018)
-- [SASS: Self-adaptation Using Stochastic Search](/publications/#CokerSASS2015)
-
-
 ## Understanding Development Practices
 
 #### Java Sandbox
@@ -94,3 +83,14 @@ practice.
 **Related Publications:**
 - [Analyzing the Impact of Social Attributes on Commit Integration Success](/publications/#SotoMSRChallenge2017)
 - [Examining Programmer Practices for Locally Handling Exceptions](/publications/#KerryExceptions2016)
+
+## AI / Search-based Software Engineering
+We are broadly interested in applying AI methods, including search-based
+approaches, to improve the engineering of software. In particular, we
+investigate applying these approaches to self-adaptive systems to enable complex
+software systems to autonomously respond to changes in their environments more
+effectively, although this category also includes smaller projects employing
+these approaches that don't fit neatly into other projects.
+
+**Related Publications:**
+{% bibliography --query @*[project~=ai-sbe] %}
