@@ -72,6 +72,8 @@ Robotics and autonomous systems are becoming increasingly prevalent. These syste
 **Related Publications**
 - [Evaluating CoBlox: A Comparative Study of Robotics Programming for Adult Novices](/publications/#WeintropCoBlox2018)
 - [Robustness Testing of Autonomy Software](/publications/#HutchisonRobustness2018)
+- [Crashing Simulated Planes is Cheap: Can Simulation Detect Robotics Bugs Early?](/publications/#TimperleyCrashing2018)
+- [Poster: BugZoo: A Platform for Studying Software Bugs](/publications/#TimperleyBugZooPoster2018)
 
 ## AI/Search-Based Software Engineering
 The environment in which software systems run are constantly changing.
