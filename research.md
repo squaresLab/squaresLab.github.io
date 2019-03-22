@@ -7,14 +7,21 @@ permalink: /research/
 # Research
 
 Here we list our research efforts by subject, linked to the section in the
-publication page that further links to the materials (code, slides, etc.)
-associated with each project. If you can't find something or think
-we've forgotten anything, please contact us directly or file an issue with this
-page at [https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
+publication page that further links to the materials associated with each
+project. If you can't find something or think we've forgotten anything, please
+contact us directly or file an issue with this page at
+[https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
 
 ---
 
 ## Program Repair
+The error repair process in software systems is, historically,
+a resource-consuming task that relies heavily on manual developer effort.
+Automatic program repair approaches enable the repair of software with 
+minimum human interaction mitigating the burden on developers.
+We have created and analyzed existing automatic program repair approaches
+to improve their performance and quality of created patches.
+
 #### SearchRepair
 SearchRepair extends and uses semantic code search over large repositories of
 candidate code bases to produce high-quality bug patches.
@@ -60,10 +67,13 @@ site](http://repairbenchmarks.cs.umass.edu/).
 - [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
 
 ## Robotics Software QA/Bug Testing
-Robots and autonomous systems are becoming increasingly important
+Robots and autonomous systems are becoming increasingly prevalent
 in our day to day lives. Therefore it is now more important than ever
 to detect and prevent errors and failures in these systems as soon as
-possible.
+possible. These systems present new quality assurance challenges. 
+
+**Related Publications**
+{% bibliography --query @*[project~=robots] %}
 
 ## AI/Search-Based Software Engineering
 The environment in which software systems run are constantly changing.
@@ -92,3 +102,14 @@ practice.
 **Related Publications:**
 - [Analyzing the Impact of Social Attributes on Commit Integration Success](/publications/#SotoMSRChallenge2017)
 - [Examining Programmer Practices for Locally Handling Exceptions](/publications/#KerryExceptions2016)
+
+## AI / Search-based Software Engineering
+We are broadly interested in applying AI methods, including search-based
+approaches, to improve the engineering of software. In particular, we
+investigate applying these approaches to self-adaptive systems to enable complex
+software systems to autonomously respond to changes in their environments more
+effectively, although this category also includes smaller projects employing
+these approaches that don't fit neatly into other projects.
+
+**Related Publications:**
+{% bibliography --query @*[project~=ai-sbe] %}
