@@ -15,6 +15,13 @@ contact us directly or file an issue with this page at
 ---
 
 ## Program Repair
+The error repair process in software systems is, historically,
+a resource-consuming task that relies heavily on manual developer effort.
+Automatic program repair approaches enable the repair of software with 
+minimum human interaction mitigating the burden on developers.
+We have created and analyzed existing automatic program repair approaches
+to improve their performance and quality of created patches.
+
 #### SearchRepair
 SearchRepair extends and uses semantic code search over large repositories of
 candidate code bases to produce high-quality bug patches.
