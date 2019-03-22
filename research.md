@@ -36,22 +36,31 @@ repositories, results, and reproduction instructions.
 - [Using a Probabilistic Model to Predict Bug Fixes](/publications/#SotoProbabilistic2018)
 - [Common Statement Kind Changes to Inform Automatic Program Repair](/publications/#SotoMSRChallenge2018)
 
-#### RepairBox
-[RepairBox](https://github.com/squaresLab/RepairBox) is an ongoing effort to
-provide a series of controlled environments for performing experiments on buggy
-C programs, particularly for program repair; it supports a number of bug
-scenarios from existing datasets, including ManyBugs.  We are especially working
-to transition as many of the ManyBugs scenarios as possible to be reproducible
-in modern environments (no
-more relying on Fedora 13!), primarily through the use of Docker.
 
-#### ManyBugs and IntroClass
+#### Benchmarks
+
 ManyBugs and IntroClass are benchmarks intended to support evaluations of
 program repair research. More info at the [repairbenchmarks
 site](http://repairbenchmarks.cs.umass.edu/).
 
+
+[BugZoo](https://github.com/squaresLab/BugZoo) is a decentralised platform,
+built on top of [Docker](https://docker.com),
+for studying and sharing historical software bugs.
+It can be used for research on program testing, analysis and repair on
+existing bug datasets.
+It provides a [command-line interface](https://squareslab.github.io/BugZoo/cli.html),
+a [RESTlike API](https://github.com/squaresLab/BugZoo/blob/master/api-specification.yml),
+and [Python](https://squareslab.github.io/BugZoo/api.html) bindings.
+BugZoo currently supports a number of datasets, including
+ManyBugs and IntroClass,
+GenProg TSE 2012's dataset, and [ROBUST](https://github.com/robust-rosin/robust).
+Check out the docs to [add support for BugZoo to your bug dataset!](https://squareslab.github.io/BugZoo/contributing/bugs.html)
+
+
 **Related Publications:**
-- [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#LeGouesManyBugs2015)
+
+{% bibliography --query @*[project~=benchmarks] %}
 
 
 ## Tools for Humans
