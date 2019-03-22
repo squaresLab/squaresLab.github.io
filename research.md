@@ -77,17 +77,6 @@ Robotics and autonomous systems are becoming increasingly prevalent. These syste
 **Related Publications**
 {% bibliography --query @*[project~=robots] %}
 
-## AI/Search-Based Software Engineering
-The environment in which software systems run are constantly changing.
-The maintenance efforts on these systems would be significantly reduced if
-software was able to automatically adapt to its environment.
-
-
-**Related Publications:**
-- [Managing Uncertainty in Self-Adaptive Systems with Plan Resue and Stochastic Search](/publications/#KinneerManaging2018)
-- [SASS: Self-adaptation Using Stochastic Search](/publications/#CokerSASS2015)
-
-
 ## Understanding Development Practices
 
 #### Java Sandbox
