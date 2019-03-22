@@ -22,6 +22,9 @@ minimum human interaction mitigating the burden on developers.
 We have created and analyzed existing automatic program repair approaches
 to improve their performance and quality of created patches.
 
+**Related Publications:**
+{% bibliography --query @*[project~=repair] %}
+
 #### SearchRepair
 SearchRepair extends and uses semantic code search over large repositories of
 candidate code bases to produce high-quality bug patches.
