@@ -60,6 +60,8 @@ site](http://repairbenchmarks.cs.umass.edu/).
 - [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
 
 ## Robotics Software QA/Bug Testing
+Robotics and autonomous systems are becoming increasingly prevalent. These systems present new quality assurance challenges. 
+
 ## AI/Search-Based Software Engineering
 The environment in which software systems run are constantly changing.
 The maintenance efforts on these systems would be significantly reduced if
