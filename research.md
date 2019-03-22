@@ -23,16 +23,16 @@ We have created and analyzed existing automatic program repair approaches
 to improve their performance and quality of created patches.
 This includes sub-areas such as:
 
-#### SearchRepair
-SearchRepair extends and uses semantic code search over large repositories of
-candidate code bases to produce high-quality bug patches.
-
 #### GenProg
 GenProg combines stochastic search methods like genetic programming with
 lightweight program analyses to find patches for real bugs in extant
 software. The [GenProg website](https://squareslab.github.io/genprog-code)
 covers most GenProg-related research, with links to the various GitHub
 repositories, results, and reproduction instructions.
+
+#### SearchRepair
+SearchRepair extends and uses semantic code search over large repositories of
+candidate code bases to produce high-quality bug patches.
 
 #### RepairBox
 [RepairBox](https://github.com/squaresLab/RepairBox) is an ongoing effort to
@@ -42,6 +42,17 @@ scenarios from existing datasets, including ManyBugs.  We are especially working
 to transition as many of the ManyBugs scenarios as possible to be reproducible
 in modern environments (no
 more relying on Fedora 13!), primarily through the use of Docker.
+
+#### Improving Patch Quality
+A problem 
+automatic program repair approaches commonly suffer is
+generating low-quality patches which overfit
+to one program specification as described by the guiding
+test suite, thus
+not generalizing to an independent oracle evaluation.
+Our work proposes a set of mechanisms to
+incentivize the creation
+of high-quality patches.
 
 **Program Repair Related Publications:**
 {% bibliography --query @*[project~=repair] %}
