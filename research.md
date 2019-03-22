@@ -62,6 +62,10 @@ site](http://repairbenchmarks.cs.umass.edu/).
 ## Robotics Software QA/Bug Testing
 Robotics and autonomous systems are becoming increasingly prevalent. These systems present new quality assurance challenges. 
 
+**Related Publications**
+- [Evaluating CoBlox: A Comparative Study of Robotics Programming for Adult Novices](/publications/#WeintropCoBlox2018)
+- [Robustness Testing of Autonomy Software](/publications/#HutchisonRobustness2018)
+
 ## AI/Search-Based Software Engineering
 The environment in which software systems run are constantly changing.
 The maintenance efforts on these systems would be significantly reduced if
