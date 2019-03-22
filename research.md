@@ -60,6 +60,11 @@ site](http://repairbenchmarks.cs.umass.edu/).
 - [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
 
 ## Robotics Software QA/Bug Testing
+Robots and autonomous systems are becoming increasingly important
+in our day to day lives. Therefore it is now more important than ever
+to detect and prevent errors and failures in these systems as soon as
+possible.
+
 ## AI/Search-Based Software Engineering
 The environment in which software systems run are constantly changing.
 The maintenance efforts on these systems would be significantly reduced if
