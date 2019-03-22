@@ -7,10 +7,10 @@ permalink: /research/
 # Research
 
 Here we list our research efforts by subject, linked to the section in the
-publication page that further links to the materials (code, slides, etc.)
-associated with each project. If you can't find something or think
-we've forgotten anything, please contact us directly or file an issue with this
-page at [https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
+publication page that further links to the materials associated with each
+project. If you can't find something or think we've forgotten anything, please
+contact us directly or file an issue with this page at
+[https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
 
 ---
 
