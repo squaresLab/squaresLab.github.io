@@ -53,12 +53,6 @@ site](http://repairbenchmarks.cs.umass.edu/).
 **Related Publications:**
 - [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#LeGouesManyBugs2015)
 
-
-## Tools for Humans
-**Related Publications:**
-- [A Study on the Use of IDE Features for Debugging](/publications/#AfzalMSRChallenge2018)
-- [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
-
 ## Robotics Software QA/Bug Testing
 ## AI/Search-Based Software Engineering
 The environment in which software systems run are constantly changing.
@@ -71,19 +65,15 @@ software was able to automatically adapt to its environment.
 - [SASS: Self-adaptation Using Stochastic Search](/publications/#CokerSASS2015)
 
 
-## Understanding Development Practices
-
-#### Java Sandbox
-
-We have investigated the challenges of using the Java Sandbox in an
-application. This work motivates possible improvements to the Java Sandbox and
-discusses the architectural constraint the Java Sandbox is used to enforce in
-practice.
-
-**Related Publications:**
-- [Evaluating the Flexibility of the Java Sandbox](/publications/#CokerEvaluating2015)
-
+## Understanding Develop[ment/er] Practices
+Software developers work on difficult problems in complex software situations.
+Tools that reduce the complexity of software development can improve both 
+the quality of the developed software and reduce the time required to 
+create the software.  To produce tools that are useful to developers, it is
+important to understand current software development practices. Our group 
+studies developers and produced software to understand both the current
+state of software quality and which factors affect software quality. We then 
+produce tools to advance the current state of software quality.
 
 **Related Publications:**
-- [Analyzing the Impact of Social Attributes on Commit Integration Success](/publications/#SotoMSRChallenge2017)
-- [Examining Programmer Practices for Locally Handling Exceptions](/publications/#KerryExceptions2016)
+{% bibliography --query @*[project~=develop] %}
