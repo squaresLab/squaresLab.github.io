@@ -21,16 +21,7 @@ Automatic program repair approaches enable the repair of software with
 minimum human interaction mitigating the burden on developers.
 We have created and analyzed existing automatic program repair approaches
 to improve their performance and quality of created patches.
-
-**Related Publications:**
-{% bibliography --query @*[project~=repair] %}
-
-#### SearchRepair
-SearchRepair extends and uses semantic code search over large repositories of
-candidate code bases to produce high-quality bug patches.
-
-**Related Publications:**
-- [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#KeSearchRepair2015)
+This includes sub-areas such as:
 
 #### GenProg
 GenProg combines stochastic search methods like genetic programming with
@@ -39,12 +30,9 @@ software. The [GenProg website](https://squareslab.github.io/genprog-code)
 covers most GenProg-related research, with links to the various GitHub
 repositories, results, and reproduction instructions.
 
-**Related Publications:**
-- [Improved Crossover Operators for Genetic Programming for Program Repair](/publications/#OliveiraCrossover2016)
-- [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#LeGouesManyBugs2015)
-- [Is the Cure Worse than the Disease?  Overfitting in Automated Program Repair](/publications/#SmithOverfitting2015)
-- [Using a Probabilistic Model to Predict Bug Fixes](/publications/#SotoProbabilistic2018)
-- [Common Statement Kind Changes to Inform Automatic Program Repair](/publications/#SotoMSRChallenge2018)
+#### SearchRepair
+SearchRepair extends and uses semantic code search over large repositories of
+candidate code bases to produce high-quality bug patches.
 
 #### RepairBox
 [RepairBox](https://github.com/squaresLab/RepairBox) is an ongoing effort to
@@ -54,6 +42,20 @@ scenarios from existing datasets, including ManyBugs.  We are especially working
 to transition as many of the ManyBugs scenarios as possible to be reproducible
 in modern environments (no
 more relying on Fedora 13!), primarily through the use of Docker.
+
+#### Improving Patch Quality
+A problem 
+automatic program repair approaches commonly suffer is
+generating low-quality patches which overfit
+to one program specification as described by the guiding
+test suite, thus
+not generalizing to an independent oracle evaluation.
+Our work proposes a set of mechanisms to
+incentivize the creation
+of high-quality patches.
+
+**Program Repair Related Publications:**
+{% bibliography --query @*[project~=repair] %}
 
 #### ManyBugs and IntroClass
 ManyBugs and IntroClass are benchmarks intended to support evaluations of
