@@ -17,6 +17,7 @@ url: "https://squareslab.github.io"
 username: clegoues
 repo: https://github.com/squaresLab/squaresLab.github.io.git
 branch: update
+github: [metadata]
 
 # Build settings
 markdown: kramdown
