@@ -15,7 +15,7 @@ ever-changing software.
 Our public projects can be found at [squaresLab
 GitHub](https://github.com/squaresLab)
 
-squaresLab@CMU is led by (Assistant) Professor [Claire Le
+squaresLab@CMU is led by (Associate) Professor [Claire Le
 Goues](http://www.clairelegoues.com), and also includes:
 
 *   [Chris Timperley](http://www.christimperley.co.uk), Systems Scientist
