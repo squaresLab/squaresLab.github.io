@@ -6,6 +6,6 @@ gem "rake", "~> 10.1.1"
 gem "rake-jekyll"
 gem 'jekyll-scholar', group: :jekyll_plugins
 gem "github-pages", group: :jekyll_plugins
-gem "nokogiri", ">= 1.8.5"
+gem "nokogiri", ">= 1.10.4"
 gem "rubyzip", ">= 1.2.2"
 
