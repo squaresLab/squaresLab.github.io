@@ -17,6 +17,7 @@ url: "https://squareslab.github.io"
 username: clegoues
 repo: https://github.com/squaresLab/squaresLab.github.io.git
 branch: update
+github: [metadata]
 
 # Build settings
 markdown: kramdown
@@ -64,7 +65,7 @@ scholar:
   replace_strings: true
   join_strings:    true
 
-  bibtex_skip_fields: [code, data, tool, results]
+  bibtex_skip_fields: ['abstract', 'code', 'data', 'month_numeric', 'project', 'tool', 'results']
 
   repository: materials
 

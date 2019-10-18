@@ -15,7 +15,7 @@ ever-changing software.
 Our public projects can be found at [squaresLab
 GitHub](https://github.com/squaresLab)
 
-squaresLab@CMU is led by (Assistant) Professor [Claire Le
+squaresLab@CMU is led by (Associate) Professor [Claire Le
 Goues](http://www.clairelegoues.com), and also includes:
 
 *   [Chris Timperley](http://www.christimperley.co.uk), Systems Scientist
@@ -26,6 +26,7 @@ Goues](http://www.clairelegoues.com), and also includes:
 *   [Afsoon Afzal](http://www.cs.cmu.edu/~afsoona)
 *   [Cody Kinneer](http://kinneerc.github.io)
 *   [Jeremy Lacomis](http://www.cs.cmu.edu/~jlacomis/)
+*   Serena Chen
 
 Our present undergraduate researchers are:
 *   Yiwei Lyu, Carnegie Mellon University
