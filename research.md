@@ -6,91 +6,96 @@ permalink: /research/
 
 # Research
 
-Here we list our research efforts by subject, linked to the section in the
-publication page that further links to the materials associated with each
-project. If you can't find something or think we've forgotten anything, please
-contact us directly or file an issue with this page at
+Here we loosely organize our research efforts by subject. If you can't find
+something or think we've forgotten anything, make sure you also consult the
+publications list, and consider contacting us directly or filing an issue with
+this page at
 [https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
 
 ---
 
-## Program Repair
-The error repair process in software systems is, historically,
-a resource-consuming task that relies heavily on manual developer effort.
-Automatic program repair approaches enable the repair of software with 
-minimum human interaction mitigating the burden on developers.
-We have created and analyzed existing automatic program repair approaches
-to improve their performance and quality of created patches.
-This includes sub-areas such as:
+## Program Transformation and Repair
 
-#### GenProg
-GenProg combines stochastic search methods like genetic programming with
-lightweight program analyses to find patches for real bugs in extant
-software. The [GenProg website](https://squareslab.github.io/genprog-code)
-covers most GenProg-related research, with links to the various GitHub
-repositories, results, and reproduction instructions.
+The error repair process in software systems is, historically, a
+resource-consuming task that relies heavily on manual developer effort.  We have
+created and analyzed existing automatic program repair approaches to improve
+their performance and quality of created patches; this work has produced
+frameworks and toolsets for automatic program transformation and repair, as well
+as datasets for its evaluation. You might be looking for:
 
-#### SearchRepair
-SearchRepair extends and uses semantic code search over large repositories of
-candidate code bases to produce high-quality bug patches.
+#### Heuristic transformation and repair
 
-#### RepairBox
-[RepairBox](https://github.com/squaresLab/RepairBox) is an ongoing effort to
-provide a series of controlled environments for performing experiments on buggy
-C programs, particularly for program repair; it supports a number of bug
-scenarios from existing datasets, including ManyBugs.  We are especially working
-to transition as many of the ManyBugs scenarios as possible to be reproducible
-in modern environments (no
-more relying on Fedora 13!), primarily through the use of Docker.
+* [Comby](https://comby.dev/): a lightweight, declarative way to change code
+      across many languages. ([Watch the StrangeLoop
+      talk!](https://www.youtube.com/watch?v=JMZLBB_BFNg))
+* [Darjeeling](https://github.com/squaresLab/Darjeeling): a
+        framework for language-agnostic search-based/heuristic program repair.
+        If you want something GenProg-like but significantly more modern, this
+        is your cup of tea.
+* [Semantic Crash
+      Bucketing](https://github.com/squaresLab/SemanticCrashBucketing): fuzz
+      test triage via program transformaiton.  
+* [GenProg4Java](https://github.com/squaresLab/genprog4java): 
+      a framework for heuristic program repair for Java programs; a generally
+      faithful reproduction of the original GenProg4C technique (below).
+* [GenProg](https://squareslab.github.io/genprog-code): 
+	    stochastic search methods like genetic programming, combined with
+	    lightweight program analyses, to find patches for bugs in extant
+	    software.  The GenProg website covers most GenProg-related
+	    research and prior results. If you want to run _new_ experiments,
+	    you may want to _start_ with Darjeeling and/or BugZoo.
 
-#### Improving Patch Quality
-A problem 
-automatic program repair approaches commonly suffer is
-generating low-quality patches which overfit
-to one program specification as described by the guiding
-test suite, thus
-not generalizing to an independent oracle evaluation.
-Our work proposes a set of mechanisms to
-incentivize the creation
-of high-quality patches.
+#### Static and semantic repair
+
+* [FootPatch](https://github.com/squaresLab/footpatch): static
+    repair of heap-based violations, extending Facebook's Infer toolset.
+* [S3 and JFix](https://xuanbachle.github.io/semanticsrepair/): semantics-based
+    repair for Java programs
+
+### Datasets and experimental frameworks
+
+* [BugZoo](https://github.com/squaresLab/BugZoo): an active
+	    effort to support controlled experiments on buggy C programs,
+	    particularly for program repair; it supports the reproduction, in a
+	    modern environment, of a number of scenarios from existing datasets,
+	    including <a href="https://repairbenchmarks.cs.umass.edu">ManyBugs</a>.
+* [ManyBugs and IntroClass](http://repairbenchmarks.cs.umass.edu/): 
+  benchmarks and results intended to support evaluations of
+	    program repair research. We recommend BugZoo for new ManyBugs
+  experiments
 
 **Program Repair Related Publications:**
 {% bibliography --query @*[project~=repair] %}
 
-#### ManyBugs and IntroClass
-ManyBugs and IntroClass are benchmarks intended to support evaluations of
-program repair research. More info at the [repairbenchmarks
-site](http://repairbenchmarks.cs.umass.edu/).
-
-**Related Publications:**
-- [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#LeGouesManyBugs2015)
-
 ## Robotics Software QA/Bug Testing
-Robotics and autonomous systems are becoming increasingly prevalent. These systems present new quality assurance challenges. 
+Robotics and autonomous systems are becoming increasingly prevalent. These
+systems present new quality assurance challenges, which we both study and attempt to
+address via new testing and analysis techniques.
 
 **Related Publications**
 {% bibliography --query @*[project~=robots] %}
 
 ## Understanding Develop[ment/er] Practices
+
 Software developers work on difficult problems in complex software situations.
 Tools that reduce the complexity of software development can improve both 
 the quality of the developed software and reduce the time required to 
 create the software.  To produce tools that are useful to developers, it is
-important to understand current software development practices. Our group 
-studies developers and produced software to understand both the current
-state of software quality and which factors affect software quality. We then 
-produce tools to advance the current state of software quality.
+important to understand current software development practices. We
+study developers and the software they produce to understand both the current
+state of software quality and which factors affect software quality.
 
 **Related Publications:**
 {% bibliography --query @*[project~=develop] %}
 
 ## AI / Search-based Software Engineering
+
 We are broadly interested in applying AI methods, including search-based
-approaches, to improve the engineering of software. In particular, we
+approaches, to improve software engineering. In particular, we
 investigate applying these approaches to self-adaptive systems to enable complex
 software systems to autonomously respond to changes in their environments more
-effectively, although this category also includes smaller projects employing
-these approaches that don't fit neatly into other projects.
+effectively; this category also includes smaller projects employing
+these approaches that don't fit neatly elsewhere.
 
 **Related Publications:**
 {% bibliography --query @*[project~=ai-sbe] %}

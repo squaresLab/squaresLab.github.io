@@ -21,7 +21,6 @@ Goues](http://www.clairelegoues.com), and also includes:
 *   [Chris Timperley](http://www.christimperley.co.uk), Systems Scientist
 *   [Deby Katz](http://www.cs.cmu.edu/~dskatz/)
 *   [Zack Coker](http://www.andrew.cmu.edu/user/zfc/)
-*   [Rijnard van Tonder](http://www.cs.cmu.edu/~rvantond/)
 *   [Mauricio Soto](http://www.cs.cmu.edu/~msotogon/)
 *   [Afsoon Afzal](http://www.cs.cmu.edu/~afsoona)
 *   [Cody Kinneer](http://kinneerc.github.io)
@@ -32,6 +31,9 @@ Our present undergraduate researchers are:
 *   Yiwei Lyu, Carnegie Mellon University
 *   Zhen Yu Ding, University of Pittsburgh
 
+We have alums:
+*   [Rijnard van Tonder](http://www.cs.cmu.edu/~rvantond/)
+
 Past visiting students include:
 * [Xuan Bach Le Dinh](https://xuanbachle.github.io/), University of Melbourne (Australia)
 * [Tian Yuan](http://sophiaytian.com/), Queen's University (Canada)
@@ -39,10 +41,9 @@ Past visiting students include:
   Management University
 * [Pavneet Singh Kochhar](https://kochharps.wixsite.com/pavneet), Microsoft (Canada) 
 
-Our previous undergraduate researchers include:
+We have also worked with a number of wonderful undergraduates through the [REUSE](https://reuse.cs.cmu.edu) program.  You should apply!
 
-If you're not sure who to contact, squaresLab can be reached via email: clegoues
-at cs dot cmu dot edu
+If you're not sure who to contact, squaresLab can be reached via email: clegoues@cs.cmu.edu
 
 
 *We apologize, sort of, for the egregious backronym.
