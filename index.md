@@ -29,7 +29,7 @@ Goues](http://www.clairelegoues.com), and also includes:
 
 Our present undergraduate researchers are:
 *   Yiwei Lyu, Carnegie Mellon University
-*   Zhen Yu Ding, University of Pittsburgh
+*   [Zhen Yu Ding](https://zhenyuding.com), University of Pittsburgh
 
 We have alums:
 *   [Rijnard van Tonder](http://www.cs.cmu.edu/~rvantond/)
