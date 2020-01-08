@@ -85,6 +85,13 @@ important to understand current software development practices. We
 study developers and the software they produce to understand both the current
 state of software quality and which factors affect software quality.
 
+#### Selected Developer Studies
+
+* [Framework Debugging](https://squareslab.github.io/materials/CokerQualitative2019.pdf): an investigation into the challenges of debugging framework application problems. One important finding was that in framework debugging, developers have a difficult time determining the correct way to implement a fix.
+* [Social Attributes on Commit Integration](https://squareslab.github.io/materials/AfzalMSRChallenge2018.pdf): a quick investigation on how the GitHub social attributes of developers can be used to predict if a commit will be accepted or not.
+*  [Prioritizing Exceptions with Behavior Metrics](https://squareslab.github.io/materials/CokerBehavior2017.pdf): a study performed in collaboration with [ABB Inc.](https://new.abb.com) that recommended which exception to fix based on the next actions that users took with the tool after an exception occurred.
+* [Java Sandbox](https://squareslab.github.io/materials/CokerEvaluating2015.pdf): an investigation into the security implications of how the Java sandbox is used in open source projects. 
+  
 **Related Publications:**
 {% bibliography --query @*[project~=develop] %}
 
@@ -96,6 +103,13 @@ investigate applying these approaches to self-adaptive systems to enable complex
 software systems to autonomously respond to changes in their environments more
 effectively; this category also includes smaller projects employing
 these approaches that don't fit neatly elsewhere.
+
+#### Selected AI/Search-based Studies
+
+* [Plan Reuse for Self-Adaptive Systems](https://squareslab.github.io/materials/KinneerManaging2018.pdf): as systems become more complex, these systems will automatically adapt to changes in the environment. However, it will be impossible to encode all possible environment changes into the self-adaptive system. Thus, we wanted to know if you can reuse past plans to 
+help plan for a new change. The answer was yes in certain cases.
+* [Stochastic search in self-adaptive systems](https://squareslab.github.io/materials/CokerSASS2015.pdf): a position paper that discusses possible future applications of stochastic search techniques to self-adaptive systems.
+  
 
 **Related Publications:**
 {% bibliography --query @*[project~=ai-sbe] %}
