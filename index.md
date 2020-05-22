@@ -24,7 +24,7 @@ Goues](http://www.clairelegoues.com), and also includes:
 *   [Afsoon Afzal](http://www.cs.cmu.edu/~afsoona)
 *   [Cody Kinneer](http://kinneerc.github.io)
 *   [Jeremy Lacomis](http://www.cs.cmu.edu/~jlacomis/)
-*   Serena Chen
+*   [Leo Chen](https://poosomooso.github.io/)
 
 Our present undergraduate researchers are:
 *   Yiwei Lyu, Carnegie Mellon University
