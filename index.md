@@ -20,7 +20,6 @@ Goues](http://www.clairelegoues.com), and also includes:
 
 *   [Chris Timperley](http://www.christimperley.co.uk), Systems Scientist
 *   [Deby Katz](http://www.cs.cmu.edu/~dskatz/)
-*   [Zack Coker](http://www.andrew.cmu.edu/user/zfc/)
 *   [Mauricio Soto](http://www.cs.cmu.edu/~msotogon/)
 *   [Afsoon Afzal](http://www.cs.cmu.edu/~afsoona)
 *   [Cody Kinneer](http://kinneerc.github.io)
@@ -33,6 +32,8 @@ Our present undergraduate researchers are:
 
 We have alums:
 *   [Rijnard van Tonder](http://www.cs.cmu.edu/~rvantond/)
+*   Zack Coker
+
 
 Past visiting students include:
 * [Xuan Bach Le Dinh](https://xuanbachle.github.io/), University of Melbourne (Australia)
