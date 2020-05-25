@@ -32,7 +32,7 @@ Our present undergraduate researchers are:
 
 We have alums:
 *   [Rijnard van Tonder](http://www.cs.cmu.edu/~rvantond/)
-*   Zack Coker
+*   [Zack Coker] (https://zackc.github.io)
 
 
 Past visiting students include:
