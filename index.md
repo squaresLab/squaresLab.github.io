@@ -16,14 +16,14 @@ Our public projects can be found at [squaresLab
 GitHub](https://github.com/squaresLab)
 
 squaresLab@CMU is led by (Associate) Professor [Claire Le
-Goues](http://www.clairelegoues.com), and also includes:
+Goues](https://www.clairelegoues.com), and also includes:
 
-*   [Chris Timperley](http://www.christimperley.co.uk), Systems Scientist
-*   [Deby Katz](http://www.cs.cmu.edu/~dskatz/)
-*   [Mauricio Soto](http://www.cs.cmu.edu/~msotogon/)
-*   [Afsoon Afzal](http://www.cs.cmu.edu/~afsoona)
-*   [Cody Kinneer](http://kinneerc.github.io)
-*   [Jeremy Lacomis](http://www.cs.cmu.edu/~jlacomis/)
+*   [Chris Timperley](https://www.christimperley.co.uk), Systems Scientist
+*   [Deby Katz](https://www.cs.cmu.edu/~dskatz/)
+*   [Mauricio Soto](https://www.cs.cmu.edu/~msotogon/)
+*   [Afsoon Afzal](https://www.cs.cmu.edu/~afsoona)
+*   [Cody Kinneer](https://kinneerc.github.io)
+*   [Jeremy Lacomis](https://www.cs.cmu.edu/~jlacomis/)
 *   [Leo Chen](https://poosomooso.github.io/)
 
 Our present undergraduate researchers are:
@@ -31,13 +31,13 @@ Our present undergraduate researchers are:
 *   [Zhen Yu Ding](https://zhenyuding.com), University of Pittsburgh
 
 We have alums:
-*   [Rijnard van Tonder](http://www.cs.cmu.edu/~rvantond/)
+*   [Rijnard van Tonder](https://rijnard.com/)
 *   [Zack Coker](https://zackc.github.io)
 
 
 Past visiting students include:
 * [Xuan Bach Le Dinh](https://xuanbachle.github.io/), University of Melbourne (Australia)
-* [Tian Yuan](http://sophiaytian.com/), Queen's University (Canada)
+* [Tian Yuan](https://sophiaytian.com/), Queen's University (Canada)
 * [Le Bui Tien Duy](https://sites.google.com/site/lebuitienduy), Singapore
   Management University
 * [Pavneet Singh Kochhar](https://kochharps.wixsite.com/pavneet), Microsoft (Canada) 
