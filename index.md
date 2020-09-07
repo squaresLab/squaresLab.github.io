@@ -7,7 +7,7 @@ layout: default
 ## We Care About Software Quality
 
 **squaresLab**, at [Carnegie Mellon's School of Computer
-Science](https://http://www.cs.cmu.edu/), focuses on **S**oftware **QUA**lity in
+Science](https://www.cs.cmu.edu/), focuses on **S**oftware **QUA**lity in
 **R**eal **E**volving **S**ystems.* We do research in automated techniques to
 reason about, assure, measure and then improve the quality of real, messy,
 ever-changing software.
