@@ -27,6 +27,7 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   [Leo Chen](https://poosomooso.github.io/)
 *   Luke Dramko
 *   Trenton Tabor
+*   Daniel Ramos
 *   Kush Jain
 
 Our present undergraduate researchers are:
