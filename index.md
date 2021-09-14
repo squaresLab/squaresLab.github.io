@@ -23,7 +23,7 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   [Leo Chen](https://poosomooso.github.io/)
 *   Luke Dramko
 *   Trenton Tabor
-*   Daniel Ramos
+*   [Daniel Ramos](https://sat.inesc-id.pt/~drr/)
 *   Kush Jain
 *   [Aidan Yang](https://aidanby.github.io/)
 
