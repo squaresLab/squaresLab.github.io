@@ -25,6 +25,9 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   [Cody Kinneer](https://kinneerc.github.io)
 *   [Jeremy Lacomis](https://www.cs.cmu.edu/~jlacomis/)
 *   [Leo Chen](https://poosomooso.github.io/)
+*   Luke Dramko
+*   Trenton Tabor
+*   Kush Jain
 
 Our present undergraduate researchers are:
 *   Yiwei Lyu, Carnegie Mellon University
