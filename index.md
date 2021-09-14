@@ -25,6 +25,7 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   Trenton Tabor
 *   Daniel Ramos
 *   Kush Jain
+*   Aidan Yang
 
 Our present undergraduate researchers are:
 *   Yiwei Lyu, Carnegie Mellon University
