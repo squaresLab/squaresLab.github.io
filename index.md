@@ -19,10 +19,6 @@ squaresLab@CMU is led by (Associate) Professor [Claire Le
 Goues](https://www.clairelegoues.com), and also includes:
 
 *   [Chris Timperley](https://www.christimperley.co.uk), Systems Scientist
-*   [Deby Katz](https://www.cs.cmu.edu/~dskatz/)
-*   [Mauricio Soto](https://www.cs.cmu.edu/~msotogon/)
-*   [Afsoon Afzal](https://www.cs.cmu.edu/~afsoona)
-*   [Cody Kinneer](https://kinneerc.github.io)
 *   [Jeremy Lacomis](https://www.cs.cmu.edu/~jlacomis/)
 *   [Leo Chen](https://poosomooso.github.io/)
 *   Luke Dramko
@@ -37,6 +33,10 @@ Our present undergraduate researchers are:
 We have alums:
 *   [Rijnard van Tonder](https://rijnard.com/)
 *   [Zack Coker](https://zackc.github.io)
+*   [Deby Katz](https://www.cs.cmu.edu/~dskatz/)
+*   [Mauricio Soto](https://www.cs.cmu.edu/~msotogon/)
+*   [Afsoon Afzal](https://www.cs.cmu.edu/~afsoona)
+*   [Cody Kinneer](https://kinneerc.github.io)
 
 
 Past visiting students include:
