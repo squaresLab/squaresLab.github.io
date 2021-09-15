@@ -26,6 +26,7 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   [Daniel Ramos](https://sat.inesc-id.pt/~drr/)
 *   Kush Jain
 *   [Aidan Yang](https://aidanby.github.io/)
+*   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
 
 Our present undergraduate researchers are:
 *   Yiwei Lyu, Carnegie Mellon University
