@@ -28,10 +28,6 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   [Aidan Yang](https://aidanby.github.io/)
 *   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
 
-Our present undergraduate researchers are:
-*   Yiwei Lyu, Carnegie Mellon University
-*   [Zhen Yu Ding](https://zhenyuding.com), University of Pittsburgh
-
 We have alums:
 *   [Rijnard van Tonder](https://rijnard.com/)
 *   [Zack Coker](https://zackc.github.io)
@@ -39,6 +35,11 @@ We have alums:
 *   [Mauricio Soto](https://www.cs.cmu.edu/~msotogon/)
 *   [Afsoon Afzal](https://www.cs.cmu.edu/~afsoona)
 *   [Cody Kinneer](https://kinneerc.github.io)
+
+
+Our present undergraduate researchers are:
+*   Yiwei Lyu, Carnegie Mellon University
+*   [Zhen Yu Ding](https://zhenyuding.com), University of Pittsburgh
 
 
 Past visiting students include:
