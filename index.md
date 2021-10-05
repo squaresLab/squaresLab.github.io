@@ -24,7 +24,7 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   Luke Dramko
 *   Trenton Tabor
 *   [Daniel Ramos](https://sat.inesc-id.pt/~drr/)
-*   Kush Jain
+*   [Kush Jain](http://www.kushjain.com)
 *   [Aidan Yang](https://aidanby.github.io/)
 *   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
 
