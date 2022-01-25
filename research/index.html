@@ -57,8 +57,6 @@ publications list, and consider contacting us directly or filing an issue with
 this page at
 <a href="https://github.com/squaresLab/squaresLab.github.io">https://github.com/squaresLab/squaresLab.github.io</a>.</p>
 
-<hr />
-
 <h2 id="program-transformation-and-repair">Program Transformation and Repair</h2>
 
 <p>The error repair process in software systems is, historically, a
@@ -99,9 +97,27 @@ as datasets for its evaluation. You might be looking for:</p>
   repair of heap-based violations, extending Facebook’s Infer toolset.</li>
   <li><a href="https://xuanbachle.github.io/semanticsrepair/">S3 and JFix</a>: semantics-based
   repair for Java programs</li>
+  <li>SearchRepair and SOS repair: SearchRepair extends and uses semantic code search over large repositories of
+candidate code bases to produce high-quality bug patches.</li>
 </ul>
 
-<h3 id="datasets-and-experimental-frameworks">Datasets and experimental frameworks</h3>
+<h4 id="genprog">GenProg</h4>
+<p>GenProg combines stochastic search methods like genetic programming with
+lightweight program analyses to find patches for real bugs in extant
+software. The <a href="https://squareslab.github.io/genprog-code">GenProg website</a>
+covers most GenProg-related research, with links to the various GitHub
+repositories, results, and reproduction instructions.</p>
+
+<p><strong>Related Publications:</strong></p>
+<ul>
+  <li><a href="/publications/#OliveiraCrossover2016">Improved Crossover Operators for Genetic Programming for Program Repair</a></li>
+  <li><a href="/publications/#LeGouesManyBugs2015">The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs</a></li>
+  <li><a href="/publications/#SmithOverfitting2015">Is the Cure Worse than the Disease?  Overfitting in Automated Program Repair</a></li>
+  <li><a href="/publications/#SotoProbabilistic2018">Using a Probabilistic Model to Predict Bug Fixes</a></li>
+  <li><a href="/publications/#SotoMSRChallenge2018">Common Statement Kind Changes to Inform Automatic Program Repair</a></li>
+</ul>
+
+<h4 id="datasets-and-experimental-frameworks">Datasets and experimental frameworks</h4>
 
 <ul>
   <li><a href="https://github.com/squaresLab/BugZoo">BugZoo</a>: an active
@@ -113,6 +129,131 @@ as datasets for its evaluation. You might be looking for:</p>
 benchmarks and results intended to support evaluations of
       program repair research. We recommend BugZoo for new ManyBugs
 experiments</li>
+</ul>
+
+<p><strong>Related Publications:</strong></p>
+
+<div class="bibliography" reversed="reversed"><span><table style="width:100%">
+  <p>
+    <tr>
+      <td valign="top"><span class="abbrv"></span></td>
+      <td>
+        <div class="reference">
+          <span id="TimperleyBugZooPoster2018"><b>Poster: BugZoo: A Platform for Studying Software Bugs</b>, Christopher Steven Timperley, Susan Stepney, and Claire Le Goues, in <i>International Conference on Software Engineering: Companion
+                  Proceedings</i>, <i>ICSE Poster ’18</i>, 2018, pp. 446–447.</span>
+        </div>
+        
+        
+        <span class="refs-link">
+          <a href="/materials/TimperleyBugZooPoster2018.pdf"><i class="far fa-file-alt"></i> PDF</a>
+        </span>
+        
+        
+        
+        
+        
+        
+        &middot; <span class="refs-link">
+          <a href="/materials/TimperleyBugZooPoster2018.poster.pdf"><i class="far fa-list-alt"></i> Poster</a>
+        </span>
+        
+        
+        
+        
+        
+        
+        &middot; <span class="refs-link">
+          <a href="http://dx.doi.org/10.1145/3183440.3195050"><i class="fas fa-link"></i> DOI</a>
+        </span>
+        
+        &middot; <span class="refs-link">
+          <a href="javascript:void(0)" onclick="$('#bibtex-entry-TimperleyBugZooPoster2018').slideToggle();">BibTeX</a>
+        </span>
+        <div class="bibtex noshow" style="width:600px;overflow:auto">
+  	      <pre class="bibtex-entry" id="bibtex-entry-TimperleyBugZooPoster2018" style="display:
+                                                                     none;">@inproceedings{TimperleyBugZooPoster2018,
+  title = {Poster: BugZoo: A Platform for Studying Software Bugs},
+  author = {Timperley, Christopher Steven and Stepney, Susan and {Le~Goues}, Claire},
+  booktitle = {International Conference on Software Engineering: Companion
+                    Proceedings},
+  series = {ICSE Poster '18},
+  pages = {446--447},
+  doi = {10.1145/3183440.3195050},
+  publisher = {ACM},
+  month = may,
+  year = {2018},
+  location = {Gothenburg, Sweden}
+}
+</pre>
+        </div>
+      </td>
+    </tr>
+  </p>
+</table>
+</span>
+<span><table style="width:100%">
+  <p>
+    <tr>
+      <td valign="top"><span class="abbrv"></span></td>
+      <td>
+        <div class="reference">
+          <span id="LeGouesManyBugs2015"><b>The ManyBugs and IntroClass Benchmarks for Automated
+                  Repair of C Programs</b>, Claire Le Goues, Neal Holtschulte, Edward K. Smith, Yuriy Brun, Premkumar Devanbu, Stephanie Forrest, and Westley Weimer, <i>IEEE Transactions on Software Engineering</i>, vol. 41, no. 12, pp. 1236–1256, Dec. 2015.</span>
+        </div>
+        
+        
+        <span class="refs-link">
+          <a href="/materials/LeGouesManyBugs2015.pdf"><i class="far fa-file-alt"></i> PDF</a>
+        </span>
+        
+        
+        
+        
+        
+        
+        
+        &middot; <span class="refs-link">
+          <a href="https://repairbenchmarks.cs.umass.edu"><i class="far fa-file-code"></i> Code</a>
+        </span>
+        
+        
+        
+        
+        
+        &middot; <span class="refs-link">
+          <a href="http://dx.doi.org/10.1109/TSE.2015.2454513"><i class="fas fa-link"></i> DOI</a>
+        </span>
+        
+        &middot; <span class="refs-link">
+          <a href="javascript:void(0)" onclick="$('#bibtex-entry-LeGouesManyBugs2015').slideToggle();">BibTeX</a>
+        </span>
+        <div class="bibtex noshow" style="width:600px;overflow:auto">
+  	      <pre class="bibtex-entry" id="bibtex-entry-LeGouesManyBugs2015" style="display:
+                                                                     none;">@article{LeGouesManyBugs2015,
+  author = {{Le~Goues}, Claire and Holtschulte, Neal and Smith, Edward K. and Brun, Yuriy and Devanbu, Premkumar and Forrest, Stephanie and Weimer, Westley},
+  title = {The {ManyBugs} and {IntroClass} Benchmarks for Automated
+                    Repair of {C} Programs},
+  journal = {{IEEE} Transactions on Software Engineering},
+  year = {2015},
+  volume = {41},
+  number = {12},
+  pages = {1236--1256},
+  month = dec,
+  doi = {10.1109/TSE.2015.2454513}
+}
+</pre>
+        </div>
+      </td>
+    </tr>
+  </p>
+</table>
+</span></div>
+
+<h2 id="tools-for-humans">Tools for Humans</h2>
+<p><strong>Related Publications:</strong></p>
+<ul>
+  <li><a href="/publications/#AfzalMSRChallenge2018">A Study on the Use of IDE Features for Debugging</a></li>
+  <li><a href="/publications/#SotoMSRChallenge2016">A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions</a></li>
 </ul>
 
 <p><strong>Program Repair Related Publications:</strong></p>
@@ -1191,63 +1332,6 @@ experiments</li>
   location = {Osaka, Japan},
   month = mar,
   publisher = {{IEEE} Computer Society}
-}
-</pre>
-        </div>
-      </td>
-    </tr>
-  </p>
-</table>
-</span>
-<span><table style="width:100%">
-  <p>
-    <tr>
-      <td valign="top"><span class="abbrv"></span></td>
-      <td>
-        <div class="reference">
-          <span id="LeGouesManyBugs2015"><b>The ManyBugs and IntroClass Benchmarks for Automated
-                  Repair of C Programs</b>, Claire Le Goues, Neal Holtschulte, Edward K. Smith, Yuriy Brun, Premkumar Devanbu, Stephanie Forrest, and Westley Weimer, <i>IEEE Transactions on Software Engineering</i>, vol. 41, no. 12, pp. 1236–1256, Dec. 2015.</span>
-        </div>
-        
-        
-        <span class="refs-link">
-          <a href="/materials/LeGouesManyBugs2015.pdf"><i class="far fa-file-alt"></i> PDF</a>
-        </span>
-        
-        
-        
-        
-        
-        
-        
-        &middot; <span class="refs-link">
-          <a href="https://repairbenchmarks.cs.umass.edu"><i class="far fa-file-code"></i> Code</a>
-        </span>
-        
-        
-        
-        
-        
-        &middot; <span class="refs-link">
-          <a href="http://dx.doi.org/10.1109/TSE.2015.2454513"><i class="fas fa-link"></i> DOI</a>
-        </span>
-        
-        &middot; <span class="refs-link">
-          <a href="javascript:void(0)" onclick="$('#bibtex-entry-LeGouesManyBugs2015').slideToggle();">BibTeX</a>
-        </span>
-        <div class="bibtex noshow" style="width:600px;overflow:auto">
-  	      <pre class="bibtex-entry" id="bibtex-entry-LeGouesManyBugs2015" style="display:
-                                                                     none;">@article{LeGouesManyBugs2015,
-  author = {{Le~Goues}, Claire and Holtschulte, Neal and Smith, Edward K. and Brun, Yuriy and Devanbu, Premkumar and Forrest, Stephanie and Weimer, Westley},
-  title = {The {ManyBugs} and {IntroClass} Benchmarks for Automated
-                    Repair of {C} Programs},
-  journal = {{IEEE} Transactions on Software Engineering},
-  year = {2015},
-  volume = {41},
-  number = {12},
-  pages = {1236--1256},
-  month = dec,
-  doi = {10.1109/TSE.2015.2454513}
 }
 </pre>
         </div>
