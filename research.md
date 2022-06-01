@@ -133,6 +133,12 @@ these approaches that don't fit neatly elsewhere.
 
 * [Plan Reuse for Self-Adaptive Systems](https://squareslab.github.io/materials/KinneerManaging2018.pdf): as systems become more complex, these systems will automatically adapt to changes in the environment. However, it will be impossible to encode all possible environment changes into the self-adaptive system. Thus, we wanted to know if self-adaptive systems can reuse previously created plans to help plan for a new change. The answer was yes in certain cases.
 * [Stochastic search in self-adaptive systems](https://squareslab.github.io/materials/CokerSASS2015.pdf): a position paper that discusses possible future applications of stochastic search techniques to self-adaptive systems.
+* [Decompiled Identifier Renaming
+  Engine (DIRE)](https://squareslab.github.io/materials/LacomisDIRE2019.pdf):
+  decompilers can reconstruct much of the information that is lost during
+  compilation, but unfortunately meaningful variable names are discarded. DIRE
+  uses neural networks trained on code written by developers to automatically
+  generate meaningful identifier names.
 
 **Related Publications:**
 {% bibliography --query @*[project~=ai-sbe] %}
