@@ -19,7 +19,6 @@ squaresLab@CMU is led by (Associate) Professor [Claire Le
 Goues](https://www.clairelegoues.com), and also includes:
 
 *   [Chris Timperley](https://www.christimperley.co.uk), Systems Scientist
-*   [Jeremy Lacomis](https://www.cs.cmu.edu/~jlacomis/)
 *   [Leo Chen](https://poosomooso.github.io/)
 *   Luke Dramko
 *   Trenton Tabor
@@ -29,6 +28,7 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
 
 We have alums:
+*   [Jeremy Lacomis](https://www.cs.cmu.edu/~jlacomis/)
 *   [Rijnard van Tonder](https://rijnard.com/)
 *   [Zack Coker](https://zackc.github.io)
 *   [Deby Katz](https://www.cs.cmu.edu/~dskatz/)
