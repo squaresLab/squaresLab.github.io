@@ -19,28 +19,28 @@ squaresLab@CMU is led by (Associate) Professor [Claire Le
 Goues](https://www.clairelegoues.com), and also includes:
 
 *   [Chris Timperley](https://www.christimperley.co.uk), Systems Scientist
-*   [Leo Chen](https://poosomooso.github.io/)
 *   Luke Dramko
 *   Trenton Tabor
 *   [Daniel Ramos](https://sat.inesc-id.pt/~drr/)
 *   [Kush Jain](http://www.kushjain.com)
 *   [Aidan Yang](https://aidanby.github.io/)
 *   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
+*   Claudia Mamede
+*   [Nikitha Rao](https://raonikitha.github.io/)
+*   [Paulo Santos](https://pcanelas.com/about/)
 
 We have alums:
 *   [Jeremy Lacomis](https://www.cs.cmu.edu/~jlacomis/)
+*   [Leo Chen](https://poosomooso.github.io/)
+*   [Sophia Kolak](https://sophiakolak.github.io/)
+*   Yiwei Lyu
+*   [Zhen Yu Ding](https://zhenyuding.com)
 *   [Rijnard van Tonder](https://rijnard.com/)
 *   [Zack Coker](https://zackc.github.io)
 *   [Deby Katz](https://www.cs.cmu.edu/~dskatz/)
 *   [Mauricio Soto](https://www.cs.cmu.edu/~msotogon/)
 *   [Afsoon Afzal](https://www.cs.cmu.edu/~afsoona)
 *   [Cody Kinneer](https://kinneerc.github.io)
-
-
-Our present undergraduate researchers are:
-*   Yiwei Lyu, Carnegie Mellon University
-*   [Zhen Yu Ding](https://zhenyuding.com), University of Pittsburgh
-
 
 Past visiting students include:
 * [Xuan Bach Le Dinh](https://xuanbachle.github.io/), University of Melbourne (Australia)
