@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem "jekyll"
+gem "jekyll", ">=4.0.0"
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
@@ -15,12 +15,12 @@ group :jekyll_plugins do
   # gem "jekyll-archives"
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
-  gem 'hawkins'
+#  gem 'hawkins'
   gem 'jekyll-scholar'
   gem 'jekyll-paginate'
   gem 'jekyll-gist'
   gem 'jekyll-redirect-from'
-  gem "github-pages"
+  gem 'jekyll-github-metadata'
 end
  
 # gem 'unicode'
