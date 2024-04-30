@@ -23,6 +23,7 @@ as datasets for its evaluation. You might be looking for:
 
 #### Heuristic transformation and repair
 
+* [PolyglotPiranha](https://github.com/uber/piranha): an expressive and polyglot code transformation toolset designed for automating large-scale refactorings
 * [Comby](https://comby.dev/): a lightweight, declarative way to change code
       across many languages. ([Watch the StrangeLoop
       talk!](https://www.youtube.com/watch?v=JMZLBB_BFNg))
