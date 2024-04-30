@@ -18,7 +18,7 @@ GitHub](https://github.com/squaresLab)
 squaresLab@CMU is led by (Associate) Professor [Claire Le
 Goues](https://www.clairelegoues.com), and also includes:
 
-*   [Chris Timperley](https://www.christimperley.co.uk), Systems Scientist
+*   [He Ye](https://heye.me/), Postdoctoral Scholar
 *   Luke Dramko
 *   Trenton Tabor
 *   [Daniel Ramos](https://sat.inesc-id.pt/~drr/)
@@ -27,9 +27,11 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
 *   Claudia Mamede
 *   [Nikitha Rao](https://raonikitha.github.io/)
-*   [Paulo Santos](https://pcanelas.com/about/)
+*   [Paulo Santos](https://pcanelas.com/about/) (honorary member)
 
-We have alums:
+We have student and postdoc alums:
+*   [Milda Zizyte](https://vivo.brown.edu/display/mzizyte)
+*   [Chris Timperley](https://www.christimperley.co.uk)
 *   [Jeremy Lacomis](https://www.cs.cmu.edu/~jlacomis/)
 *   [Leo Chen](https://poosomooso.github.io/)
 *   [Sophia Kolak](https://sophiakolak.github.io/)
@@ -42,7 +44,9 @@ We have alums:
 *   [Afsoon Afzal](https://www.cs.cmu.edu/~afsoona)
 *   [Cody Kinneer](https://kinneerc.github.io)
 
-Past visiting students include:
+Past visiting students and postdoctoral scholars include:
+* [Hoaye Tian](https://haoyetiancoder.github.io/), University of Luxembourg
+* Alfredo Cruz Carlon, IT University of Copenhagen
 * [Xuan Bach Le Dinh](https://xuanbachle.github.io/), University of Melbourne (Australia)
 * [Tian Yuan](https://sophiaytian.com/), Queen's University (Canada)
 * [Le Bui Tien Duy](https://sites.google.com/site/lebuitienduy), Singapore
