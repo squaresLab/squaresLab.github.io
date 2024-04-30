@@ -3,7 +3,7 @@
 ## Adding your paper to the squaresLab site
 
 Adding your paper is now easy! Just drop a BibTeX entry in
-`_bibliography/publications.bib` on the `update` branch and Travis will take
+`_bibliography/publications.bib` on the `update` branch and GitHub actions will take
 care of the rest. If you have a PDF of the paper, slides, or a poster just drop
 them in the `materials` directory, naming them `key.pdf`, `key.slides.pdf`, and
 `key.poster.pdf` respectively. Jekyll-Scholar will automatically pick these up
