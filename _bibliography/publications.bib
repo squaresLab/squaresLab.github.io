@@ -18,6 +18,58 @@ address = {Los Alamitos, CA, USA},
 month = {sep}
 }
 
+@inproceedings{jainContextualPMT,
+author = {Jain, Kush and Alon, Uri and Groce, Alex and {Le~Goues}, Claire},
+title = {Contextual Predictive Mutation Testing},
+year = {2023},
+isbn = {9798400703270},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3611643.3616289},
+doi = {10.1145/3611643.3616289},
+abstract = {Mutation testing is a powerful technique for assessing and improving test suite quality that artificially introduces bugs and checks whether the test suites catch them. However, it is also computationally expensive and thus does not scale to large systems and projects. One promising recent approach to tackling this scalability problem uses machine learning to predict whether the tests will detect the synthetic bugs, without actually running those tests. However, existing predictive mutation testing approaches still misclassify 33\% of detection outcomes on a randomly sampled set of mutant-test suite pairs. We introduce MutationBERT, an approach for predictive mutation testing that simultaneously encodes the source method mutation and test method, capturing key context in the input representation. Thanks to its higher precision, MutationBERT saves 33\% of the time spent by a prior approach on checking/verifying live mutants. MutationBERT, also outperforms the state-of-the-art in both same project and cross project settings, with meaningful improvements in precision, recall, and F1 score. We validate our input representation, and aggregation approaches for lifting predictions from the test matrix level to the test suite level, finding similar improvements in performance. MutationBERT not only enhances the state-of-the-art in predictive mutation testing, but also presents practical benefits for real-world applications, both in saving developer time and finding hard to detect mutants that prior approaches do not.},
+booktitle = {Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {250–261},
+numpages = {12},
+keywords = {test oracles, mutation analysis, code coverage},
+location = {<conf-loc>, <city>San Francisco</city>, <state>CA</state>, <country>USA</country>, </conf-loc>},
+series = {ESEC/FSE 2023}
+}
+
+@INPROCEEDINGS {raoCATLM,
+author = {N. Rao and K. Jain and U. Alon and C. {Le~Goues} and V. J. Hellendoorn},
+booktitle = {2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+title = {CAT-LM Training Language Models on Aligned Code And Tests},
+year = {2023},
+volume = {},
+issn = {},
+pages = {409-420},
+abstract = {Testing is an integral but often neglected part of the software development process. Classical test generation tools such as EvoSuite generate behavioral test suites by optimizing for coverage, but tend to produce tests that are hard to understand. Language models trained on code can generate code that is highly similar to that written by humans, but current models are trained to generate each file separately, as is standard practice in natural language processing, and thus fail to consider the code-under-test context when producing a test file. In this work, we propose the Aligned Code And Tests Language Model (CAT-LM), a GPT-style language model with 2.7 Billion parameters, trained on a corpus of Python and Java projects. We utilize a novel pretraining signal that explicitly considers the mapping between code and test files when available. We also drastically increase the maximum sequence length of inputs to 8,192 tokens, 4x more than typical code generation models, to ensure that the code context is available to the model when generating test code. We analyze its usefulness for realistic applications, showing that sampling with filtering (e.g., by compilability, coverage) allows it to efficiently produce tests that achieve coverage similar to ones written by developers while resembling their writing style. By utilizing the code context, CAT-LM generates more valid tests than even much larger language models trained with more data (CodeGen 16B and StarCoder) and substantially outperforms a recent test-specific model (TeCo) at test completion. Overall, our work highlights the importance of incorporating software-specific insights when training language models for code and paves the way to more powerful automated test generation.},
+keywords = {training;codes;runtime;data models;software;test pattern generators;standards},
+doi = {10.1109/ASE56229.2023.00193},
+url = {https://doi.ieeecomputersociety.org/10.1109/ASE56229.2023.00193},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {sep}
+}
+
+@INPROCEEDINGS {jainOracleGap,
+author = {K. Jain and G. Kalburgi and C. {Le~Goues} and A. Groce},
+booktitle = {2023 IEEE 34th International Symposium on Software Reliability Engineering (ISSRE)},
+title = {Mind the Gap: The Difference Between Coverage and Mutation Score Can Guide Testing Efforts},
+year = {2023},
+volume = {},
+issn = {},
+pages = {102-113},
+abstract = {An &quot;adequate&quot; test suite should effectively find all inconsistencies between a system&#x27;s requirements/specifications and its implementation. Practitioners frequently use code coverage to approximate adequacy, while academics argue that mutation score may better approximate true (oracular) adequacy coverage. High code coverage is increasingly attainable even on large systems via automatic test generation, including fuzzing. In light of all of these options for measuring and improving testing effort, how should a QA engineer spend their time? We propose a new framework for reasoning about the extent, limits, and nature of a given testing effort based on an idea we call the oracle gap, or the difference between source code coverage and mutation score for a given software element. We conduct (1) a large-scale observational study of the oracle gap across popular Maven projects, (2) a study that varies testing and oracle quality across several of those projects and (3) a small-scale observational study of highly critical, well-tested code across comparable blockchain projects. We show that the oracle gap surfaces important information about the extent and quality of a test effort beyond either adequacy metric alone. In particular, it provides a way for practitioners to identify source files where it is likely a weak oracle tests important code.},
+keywords = {codes;source coding;fuzzing;time measurement;software;cognition;software reliability},
+doi = {10.1109/ISSRE59848.2023.00036},
+url = {https://doi.ieeecomputersociety.org/10.1109/ISSRE59848.2023.00036},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {oct}
+}
+
 
 @inproceedings{SOAR2021,
   author       = {Ansong Ni and
