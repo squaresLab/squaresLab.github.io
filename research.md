@@ -98,7 +98,7 @@ Papers analyzing or evaluating specific components of GP-based repair are (addit
 
 {% capture other_transformation %}
 
-Transformation has many uses in software engineering developer tooling, and many problems are amenable to a repair-like approach.  We have explored transformation for  [API migration (SOAR)](/publications/#SOAR21) and [API upgrades (MELT)](/publications/#RamosMLMMG23), and for [transpilation (BatFix)](/publications/#batfix). We have also [improved static analysis via program transformation](/publications/#icse2020transform) and used it to [triage fuzz tests](https://github.com/squaresLab/SemanticCrashBucketing).  Beyond triage, we have an ongoing body of work for general-purpose transformation in the context of fuzz and mutation testing:
+Transformation has many uses in software engineering developer tooling, and many problems are amenable to a repair-like approach.  We have explored transformation for  [API migration (SOAR)](/publications/#SOAR21) and [API upgrades (MELT)](/publications/#RamosMLMMG23), [transpilation (BatFix)](/publications/#batfix), and [clone mitigation](/publications/#vanTonderMicroClones2016). We have also [improved static analysis via program transformation](/publications/#icse2020transform) and used it to [triage fuzz tests](https://github.com/squaresLab/SemanticCrashBucketing).  Beyond triage, we have an ongoing body of work for general-purpose transformation in the context of fuzz and mutation testing:
 
 {% bibliography --query @*[project~=transform-testing] %}
 
@@ -318,50 +318,33 @@ Our work often leverages advances in AI to develop new development tools and QA 
 
 ## Understanding Develop[ment/er] Practices
 
-Software developers work on difficult problems in complex software situations.
-Tools that reduce the complexity of software development can improve both 
-the quality of the developed software and reduce the time required to 
-create the software.  To produce tools that are useful to developers, it is
+To produce tools that are useful to developers, it is
 important to understand current software development practices. We
-study developers and the software they produce to understand both the current
+study developers and the software and artifacts they produce to understand both the current
 state of software quality and which factors affect software quality.
 
-#### Selected Developer Studies
+{% capture human_papers %}
 
-## Tools for Humans
-**Related Publications:**
-- [A Study on the Use of IDE Features for Debugging](/publications/#AfzalMSRChallenge2018)
-- [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
-
-
-
-* [Framework Debugging](https://squareslab.github.io/materials/CokerQualitative2019.pdf): an investigation into the challenges of debugging framework application problems. One important finding was that in framework debugging, developers have a difficult time determining the correct way to implement a fix.
-* [Social Attributes on Commit Integration](https://squareslab.github.io/materials/AfzalMSRChallenge2018.pdf): a quick investigation on how the GitHub social attributes of developers can be used to predict if a commit will be accepted or not.
-*  [Prioritizing Exceptions with Behavior Metrics](https://squareslab.github.io/materials/CokerBehavior2017.pdf): a study performed in collaboration with [ABB Inc.](https://new.abb.com) that recommended which exception to fix based on the next actions that users took with the tool after an exception occurred.
-* [Java Sandbox](https://squareslab.github.io/materials/CokerEvaluating2015.pdf): an investigation into the security implications of how the Java sandbox is used in open source projects.
-  
-**Related Publications:**
 {% bibliography --query @*[project~=develop] %}
 
-## AI / Search-based Software Engineering
+{% endcapture %}
 
-We are broadly interested in applying AI methods, including search-based
-approaches, to improve software engineering. In particular, we
-investigate applying these approaches to self-adaptive systems to enable complex
-software systems to autonomously respond to changes in their environments more
-effectively; this category also includes smaller projects employing
-these approaches that don't fit neatly elsewhere.
 
-#### Selected AI/Search-based Studies
 
-* [Plan Reuse for Self-Adaptive Systems](https://squareslab.github.io/materials/KinneerManaging2018.pdf): as systems become more complex, these systems will automatically adapt to changes in the environment. However, it will be impossible to encode all possible environment changes into the self-adaptive system. Thus, we wanted to know if self-adaptive systems can reuse previously created plans to help plan for a new change. The answer was yes in certain cases.
-* [Stochastic search in self-adaptive systems](https://squareslab.github.io/materials/CokerSASS2015.pdf): a position paper that discusses possible future applications of stochastic search techniques to self-adaptive systems.
-* [Decompiled Identifier Renaming
-  Engine (DIRE)](https://squareslab.github.io/materials/LacomisDIRE2019.pdf):
-  decompilers can reconstruct much of the information that is lost during
-  compilation, but unfortunately meaningful variable names are discarded. DIRE
-  uses neural networks trained on code written by developers to automatically
-  generate meaningful identifier names.
+<div id="humanAccordian">
 
-**Related Publications:**
-{% bibliography --query @*[project~=ai-sbe] %}
+  <div class="card">
+    <div class="card-header" id="headingHuman">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseHuman" aria-expanded="true" aria-controls="collapseHuman">
+      Understanding SE and QA practices
+        </button>
+      </h5>
+    </div>
+    <div id="collapseHuman" class="collapse" aria-labelledby="headingHuman" data-parent="#humanAccordian">
+      <div class="card-body">{{ human_papers | markdownify }}</div>
+    </div>
+  </div>
+
+</div>
+
