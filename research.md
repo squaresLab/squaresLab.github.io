@@ -12,6 +12,8 @@ publications list, and consider contacting us directly or filing an issue with
 this page at
 [https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
 
+We try to be reasonably thorough, but note that this page does not attempt list every paper squaresLab has ever published; see [publications](/publications) for a complete list.
+
 ## Program Transformation and Repair
 
 The error repair process in software systems is, historically, a
@@ -21,8 +23,6 @@ their performance and quality of created patches.  We also develop approaches to
 automate other types of transformation, including API updates and migration. This work has produced
 frameworks and toolsets for automatic program transformation and repair, as well
 as datasets for its evaluation. You might be looking for:
-
-#### Heuristic transformation and repair generally
 
 {% capture transform_text %} 
 
@@ -111,21 +111,18 @@ For completeness, the following publications are those that either (a) overview 
 
 {% endcapture %}
 
+
 <div id="accordion">
+  
   <div class="card">
     <div class="card-header" id="headingTransform">
-      <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTransform" aria-expanded="true" aria-controls="collapseTransform">
-          Heuristic transformation and repair generally.
-        </button>
-      </h5>
-    </div>
-
+      <h5 class="mb-0"><button class="btn btn-link" data-toggle="collapse" data-target="#collapseTransform" aria-expanded="true" aria-controls="collapseTransform">
+          Heuristic transformation and repair generally
+        </button></h5>
+    </div> <!-- transform header  -->
    <div id="collapseTransform" class="collapse" aria-labelledby="headingTransform" data-parent="#accordion">
-      <div class="card-body">
-        {{ transform_text | markdownify }}
-      </div>
-    </div>
+      <div class="card-body">{{ transform_text | markdownify }}</div>
+    </div> <!-- collapse transform -->
   </div>
 
   <div class="card">
@@ -134,14 +131,10 @@ For completeness, the following publications are those that either (a) overview 
         <button class="btn btn-link" data-toggle="collapse"
     data-target="#collapseSemantic" aria-expanded="true" aria-controls="collapseSemantic">
         Static and semantic repair
-        </button>
-      </h5>
-    </div>
-
+        </button></h5>
+    </div><!-- semantic header -->
    <div id="collapseSemantic" class="collapse" aria-labelledby="headingSemantic" data-parent="#accordion">
-      <div class="card-body">
-      {{ semantic_text | markdownify }}
-      </div>
+      <div class="card-body">{{ semantic_text | markdownify }}</div>
     </div>
   </div>
 
@@ -154,7 +147,6 @@ For completeness, the following publications are those that either (a) overview 
         </button>
       </h5>
     </div>
-
    <div id="collapseEval" class="collapse" aria-labelledby="headingEval" data-parent="#accordion">
       <div class="card-body">
       {{ eval_text | markdownify }}
@@ -171,7 +163,6 @@ For completeness, the following publications are those that either (a) overview 
         </button>
       </h5>
     </div>
-
    <div id="collapseOtherTransform" class="collapse" aria-labelledby="headingOtherTransform" data-parent="#accordion">
       <div class="card-body">
         {{ other_transformation | markdownify }}
@@ -188,11 +179,8 @@ For completeness, the following publications are those that either (a) overview 
         </button>
       </h5>
     </div>
-
    <div id="collapseGenProg" class="collapse" aria-labelledby="headingGenProg" data-parent="#accordion">
-      <div class="card-body">
-        {{ genprog_text | markdownify }}
-      </div>
+      <div class="card-body">{{ genprog_text | markdownify }} </div>
     </div>
   </div>
 
@@ -205,46 +193,71 @@ For completeness, the following publications are those that either (a) overview 
         </button>
       </h5>
     </div>
-
    <div id="collapseRepair" class="collapse" aria-labelledby="headingRepair" data-parent="#accordion">
-      <div class="card-body">
-    {{ all_repair | markdownify }}
-  </div>
+      <div class="card-body">{{ all_repair | markdownify }}</div>
+   </div>
+</div>
 </div>
 
-
-</div>
-</div>
-</div>
 
 ## Search-based software engineering
 
+{% capture sbse_papers %}
 
-{% capture sbse-papers %}
+{% bibliography --query @*[project~=sbse] %}
 
-{% bibliography --query @*[project~=sbse-ai] %}
-
-{% endcapture *}
-
-Our interest in applying AI to software engineering started with search-based techniques.  Much of our work in this space has been repair-specific, though we have also looked at the application of GP and related search-based approaches for self-adaptive systems and knowledge reuse at the model level. Relevant publications (for both code and models/plans) include:
+{% endcapture %}
 
 
-<div id="sbse-accordian">
+Our interest in applying AI to software engineering started with search-based techniques.  Much of our work in this space has been repair-specific, though we have also looked at the application of GP and related search-based approaches for self-adaptive systems and knowledge reuse at the model level. Relevant publications (for both code and models/plans, excluding those that are proposing new APR approaches) include:
+
+
+<div id="sbseAccordian">
+
   <div class="card">
     <div class="card-header" id="headingSBSE">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSBSE" aria-expanded="true" aria-controls="collapseSBSE">
-  Search-based Software Engineering publications
+          Search-based Software Engineering publications
         </button>
       </h5>
     </div>
+    <div id="collapseSBSE" class="collapse" aria-labelledby="headingSBSE" data-parent="#sbseAccordian">
+      <div class="card-body">{{ sbse_papers | markdownify }}</div>
+    </div>
+  </div>
 
-   <div id="collapseSBSE" class="collapse" aria-labelledby="headingSBSE" data-parent="#sbse-accordian">
-      <div class="card-body">
-    {{ sbse-papers | markdownify }}
 </div>
-</div>
-</div>
+
+## SE for Robotics 
+
+
+{% capture robot_papers %}
+
+{% bibliography --query @*[project~=robots] %}
+
+{% endcapture %}
+
+<!-- fixme: add robot workshop report -->
+Robotics and autonomous systems are becoming increasingly prevalent. These
+systems present new quality assurance challenges, which we both study and attempt to
+address via new testing and analysis techniques.
+
+<div id="robotAccordian">
+
+  <div class="card">
+    <div class="card-header" id="headingRobot">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRobot" aria-expanded="true" aria-controls="collapseRobot">
+          SE for robotics publications
+        </button>
+      </h5>
+    </div>
+    <div id="collapseRobot" class="collapse" aria-labelledby="headingRobot" data-parent="#robotAccordian">
+      <div class="card-body">{{ robot_papers | markdownify }}</div>
+    </div>
+  </div>
+
 </div>
 
 
@@ -253,16 +266,6 @@ Our interest in applying AI to software engineering started with search-based te
 - [A Study on the Use of IDE Features for Debugging](/publications/#AfzalMSRChallenge2018)
 - [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
 
-**Program Repair Related Publications:**
-{% bibliography --query @*[project~=repair] %}
-
-## Robotics Software QA/Bug Testing
-Robotics and autonomous systems are becoming increasingly prevalent. These
-systems present new quality assurance challenges, which we both study and attempt to
-address via new testing and analysis techniques.
-
-**Related Publications**
-{% bibliography --query @*[project~=robots] %}
 
 ## Understanding Develop[ment/er] Practices
 
