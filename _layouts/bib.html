@@ -58,6 +58,10 @@
           <a href="{{entry.data}}"><i class="fas fa-database"></i> Data</a>
         </span>
         {% endif %}
+        {% if entry.website %} 
+        {% if first %}{% assign first = false %}{% else %}&middot; {% endif %}<span class="refs-link">
+        <a href="{{entry.website}}">Website</a></span> 
+        {% endif %}
         {% if entry.results %}
         {% if first %}{% assign first = false %}{% else %}&middot; {% endif %}<span class="refs-link">
           <a href="{{entry.results}}"><i class="fas fa-chart-line"></i> Results</a>
