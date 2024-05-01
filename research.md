@@ -16,12 +16,18 @@ this page at
 
 The error repair process in software systems is, historically, a
 resource-consuming task that relies heavily on manual developer effort.  We have
-created and analyzed existing automatic program repair approaches to improve
-their performance and quality of created patches; this work has produced
+created and analyzed automatic program repair approaches to improve
+their performance and quality of created patches.  We also develop approaches to
+automate other types of transformation, including API updates and migration. This work has produced
 frameworks and toolsets for automatic program transformation and repair, as well
 as datasets for its evaluation. You might be looking for:
 
-#### Heuristic transformation and repair
+#### Heuristic transformation and repair generally
+
+{% capture transform_text %} 
+
+We have developed a number of frameworks and toolsets for automatic program transformation
+and repair. 
 
 * [PolyglotPiranha](https://github.com/uber/piranha): an expressive and polyglot code transformation toolset designed for automating large-scale refactorings
 * [Comby](https://comby.dev/): a lightweight, declarative way to change code
@@ -31,9 +37,6 @@ as datasets for its evaluation. You might be looking for:
         framework for language-agnostic search-based/heuristic program repair.
         If you want something GenProg-like but significantly more modern, this
         is your cup of tea.
-* [Semantic Crash
-      Bucketing](https://github.com/squaresLab/SemanticCrashBucketing): fuzz
-      test triage via program transformaiton.  
 * [GenProg4Java](https://github.com/squaresLab/genprog4java): 
       a framework for heuristic program repair for Java programs; a generally
       faithful reproduction of the original GenProg4C technique (below).
@@ -42,47 +45,150 @@ as datasets for its evaluation. You might be looking for:
 	    lightweight program analyses, to find patches for bugs in extant
 	    software.  The GenProg website covers most GenProg-related
 	    research and prior results. If you want to run _new_ experiments,
-	    you may want to _start_ with Darjeeling and/or BugZoo.
+	    you'll want to _start_ with Darjeeling and/or BugZoo.  This stuff is old.
+{% endcapture %}
 
-#### Static and semantic repair
-
+{% capture semantic_text %}
 * [FootPatch](https://github.com/squaresLab/footpatch): static
     repair of heap-based violations, extending Facebook's Infer toolset.
 * [S3 and JFix](https://xuanbachle.github.io/semanticsrepair/): semantics-based
     repair for Java programs
-* SearchRepair and SOS repair: SearchRepair extends and uses semantic code search over large repositories of
-candidate code bases to produce high-quality bug patches.
-
-#### GenProg
-GenProg combines stochastic search methods like genetic programming with
-lightweight program analyses to find patches for real bugs in extant
-software. The [GenProg website](https://squareslab.github.io/genprog-code)
-covers most GenProg-related research, with links to the various GitHub
-repositories, results, and reproduction instructions.
-
-**Related Publications:**
-- [Improved Crossover Operators for Genetic Programming for Program Repair](/publications/#OliveiraCrossover2016)
-- [The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs](/publications/#LeGouesManyBugs2015)
-- [Is the Cure Worse than the Disease?  Overfitting in Automated Program Repair](/publications/#SmithOverfitting2015)
-- [Using a Probabilistic Model to Predict Bug Fixes](/publications/#SotoProbabilistic2018)
-- [Common Statement Kind Changes to Inform Automatic Program Repair](/publications/#SotoMSRChallenge2018)
+% [Static repair of framework directive violations](/publications/#coker21framefix)
+* SearchRepair and SOS repair: SearchRepair extends and uses semantic code search over large repositories of candidate code bases to produce high-quality bug patches.
+{% endcapture %}
 
 
-#### Datasets and experimental frameworks
+{% capture eval_text %}
+We have developed a number of frameworks and datasets for evaluating program repair, and conducted empirical evaluations of repair along a number of axes. Datasets include:
 
+* [PreciseBugCollector](https://github.com/SophieHYe/PreciseBugs): second place at ASE Challenge 2023! An extremely large dataset of security vulnerabilities, with associated metadata. 
 * [BugZoo](https://github.com/squaresLab/BugZoo): an active
 	    effort to support controlled experiments on buggy C programs,
 	    particularly for program repair; it supports the reproduction, in a
 	    modern environment, of a number of scenarios from existing datasets,
-	    including <a href="https://repairbenchmarks.cs.umass.edu">ManyBugs</a>.
+	    including [ManyBugs](https://repairbenchmarks.cs.umass.edu).
 * [ManyBugs and IntroClass](http://repairbenchmarks.cs.umass.edu/): 
   benchmarks and results intended to support evaluations of
 	    program repair research. We recommend BugZoo for new ManyBugs
-  experiments
+  experiments.
 
 **Related Publications:**
-
 {% bibliography --query @*[project~=benchmarks] %}
+
+{% endcapture %}
+
+{% capture genprog_text %}
+GenProg combines stochastic search methods like genetic programming with
+lightweight program analyses to find patches for real bugs in extant
+software. The [GenProg website](https://squareslab.github.io/genprog-code)
+covers most GenProg-related research, with links to the various GitHub
+repositories, results, and reproduction instructions, as well as a historical
+list of largely GenProg-specific papers (through about 2016).
+{% endcapture %}
+
+{% capture other_transformation %}
+Transformation has many uses in software engineering developer tooling, and many problems are amenable to a repair-like approach.  We have explored transformation for API migration and updates:
+
+
+Mutation and fuzz testing:
+
+
+And other improvements to the QA process:
+
+* [Tailoring Programs for Static Analysis via Program Transformation](publications/#icse2020transform)
+* [Semantic Crash Bucketing](https://github.com/squaresLab/SemanticCrashBucketing): fuzz test triage via program transformation.  
+{% endcapture %}
+
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingTransform">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTransform" aria-expanded="true" aria-controls="collapseTransform">
+          Heuristic transformation and repair generally.
+        </button>
+      </h5>
+    </div>
+
+   <div id="collapseTransform" class="collapse" aria-labelledby="headingTransform" data-parent="#accordion">
+      <div class="card-body">
+{{ transform_text | markdownify }}
+</div>
+</div>
+
+  <div class="card">
+    <div class="card-header" id="headingSemantic">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse"
+    data-target="#collapseSemantic" aria-expanded="true" aria-controls="collapseSemantic">
+Static and semantic repair
+        </button>
+      </h5>
+    </div>
+
+   <div id="collapseSemantic" class="collapse" aria-labelledby="headingSemantic" data-parent="#accordion">
+      <div class="card-body">
+{{ semantic_text | markdownify }}
+</div>
+</div>
+
+  <div class="card">
+    <div class="card-header" id="headingEval">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse"
+    data-target="#collapseEval" aria-expanded="true" aria-controls="collapseEval">
+  Datasets, experimental frameworks, and evaluations
+        </button>
+      </h5>
+    </div>
+
+   <div id="collapseEval" class="collapse" aria-labelledby="headingEval" data-parent="#accordion">
+      <div class="card-body">
+{{ eval_text | markdownify }}
+</div> </div>
+
+  <div class="card">
+    <div class="card-header" id="headingOtherTransform">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse"
+    data-target="#collapseOtherTransform" aria-expanded="true" aria-controls="collapseOtherTransform">
+Transformation beyond repair
+        </button>
+      </h5>
+    </div>
+
+   <div id="collapseOtherTransform" class="collapse" aria-labelledby="headingOtherTransform" data-parent="#accordion">
+      <div class="card-body">
+{{ other_transformation | markdownify }}
+</div> </div>
+
+  <div class="card">
+    <div class="card-header" id="headingGenProg">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse"
+    data-target="#collapseGenProg" aria-expanded="true" aria-controls="collapseGenProg">
+  GenProg
+        </button>
+      </h5>
+    </div>
+
+   <div id="collapseGenProg" class="collapse" aria-labelledby="headingGenProg" data-parent="#accordion">
+      <div class="card-body">
+{{ genrpog_text | markdownify }}
+  </div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+#### Transformation Beyond Repair 
+
 
 
 ## Tools for Humans
