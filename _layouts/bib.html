@@ -38,6 +38,11 @@
           Slides (OpenOffice)</a>
         </span>
         {% endif %}
+        {% if entry.video %}
+        {% if first %}{% assign first = false %}{% else %}&middot; {% endif %}<span class="refs-link">
+          <a href="{{entry.video}}"><i class="fas fa-video"></i>Video</a>
+          </span>
+        {% endif %}
         {% if links['poster.pdf'] %}
         {% if first %}{% assign first = false %}{% else %}&middot; {% endif %}<span class="refs-link">
           <a href="{{links['poster.pdf']}}"><i class="far fa-list-alt"></i> Poster</a>

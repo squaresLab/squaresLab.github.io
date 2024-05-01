@@ -1,5 +1,6 @@
 _site/
 .jekyll-cache/
 .gitignore
+.DS_Store
 Gemfile.lock
 todos.txt
