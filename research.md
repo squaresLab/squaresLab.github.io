@@ -52,16 +52,23 @@ and repair.
 * [FootPatch](https://github.com/squaresLab/footpatch): static
     repair of heap-based violations, extending Facebook's Infer toolset.
 * [S3 and JFix](https://xuanbachle.github.io/semanticsrepair/): semantics-based
-    repair for Java programs
-% [Static repair of framework directive violations](/publications/#coker21framefix)
-* SearchRepair and SOS repair: SearchRepair extends and uses semantic code search over large repositories of candidate code bases to produce high-quality bug patches.
+    repair for Java programs.
+* [Static repair of framework directive violations](/publications/#coker21framefix)
+*  [SOSrepair](/publications/AfzalSOSRepair19) (and its predecessor, [SearchRepair](/publications/#KeSearchRepair2015)) SearchRepair and SOSRepair extend and use semantic code search over large repositories of candidate code bases to produce high-quality bug patches.
+* [Crayons](/publications/#cruz22crayons), statically repairing locking API violations in the Linux kernel.
+
+**Related Publications:**
+
+{% bibliography --query @*[project~=static-repair] %}
+
 {% endcapture %}
 
 
 {% capture eval_text %}
-We have developed a number of frameworks and datasets for evaluating program repair, and conducted empirical evaluations of repair along a number of axes. Datasets include:
+We have developed frameworks and datasets for evaluating program repair, and conducted empirical evaluations of repair along a number of axes. Datasets include:
 
 * [PreciseBugCollector](https://github.com/SophieHYe/PreciseBugs): second place at ASE Challenge 2023! An extremely large dataset of security vulnerabilities, with associated metadata. 
+* [ArduBugs](https://github.com/squaresLab/ArduBugs): a dataset of robostics-specific bugs in the Ardu* ecosystem. 
 * [BugZoo](https://github.com/squaresLab/BugZoo): an active
 	    effort to support controlled experiments on buggy C programs,
 	    particularly for program repair; it supports the reproduction, in a
@@ -84,21 +91,25 @@ software. The [GenProg website](https://squareslab.github.io/genprog-code)
 covers most GenProg-related research, with links to the various GitHub
 repositories, results, and reproduction instructions, as well as a historical
 list of largely GenProg-specific papers (through about 2016).
+
+Papers specific to GP-based repair are listed under search-based softwre engineering, below
+
 {% endcapture %}
 
 {% capture other_transformation %}
-Transformation has many uses in software engineering developer tooling, and many problems are amenable to a repair-like approach.  We have explored transformation for API migration and updates:
 
+Transformation has many uses in software engineering developer tooling, and many problems are amenable to a repair-like approach.  We have explored transformation for  [API migration (SOAR)](/publications/#SOAR21) and [API upgrades (MELT)](/publications/#RamosMLMMG23), and for [transpilation (BatFix)](/publications/#batfix). We have also [improved static analysis via program transformation](/publications/#icse2020transform) and used it to [triage fuzz tests](https://github.com/squaresLab/SemanticCrashBucketing).  Beyond triage, we have an ongoing body of work for general-purpose transformation in the context of fuzz and mutation testing:
 
-Mutation and fuzz testing:
+{% bibliography --query @*[project~=transform-testing] %}
 
-
-And other improvements to the QA process:
-
-* [Tailoring Programs for Static Analysis via Program Transformation](publications/#icse2020transform)
-* [Semantic Crash Bucketing](https://github.com/squaresLab/SemanticCrashBucketing): fuzz test triage via program transformation.  
 {% endcapture %}
 
+{% capture all_repair %}
+For completeness, the following publications are those that either (a) overview repair generally (CACM articles and the like) or (b) (the majority) propose new or substantially augmented program repair techniques.  (This omits specific studies of SBSE operators like crossover; see the SBSE section). 
+
+{% bibliography --query @*[project~=new-repair] %}
+
+{% endcapture %}
 
 <div id="accordion">
   <div class="card">
@@ -112,83 +123,129 @@ And other improvements to the QA process:
 
    <div id="collapseTransform" class="collapse" aria-labelledby="headingTransform" data-parent="#accordion">
       <div class="card-body">
-{{ transform_text | markdownify }}
-</div>
-</div>
+        {{ transform_text | markdownify }}
+      </div>
+    </div>
+  </div>
 
   <div class="card">
     <div class="card-header" id="headingSemantic">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse"
     data-target="#collapseSemantic" aria-expanded="true" aria-controls="collapseSemantic">
-Static and semantic repair
+        Static and semantic repair
         </button>
       </h5>
     </div>
 
    <div id="collapseSemantic" class="collapse" aria-labelledby="headingSemantic" data-parent="#accordion">
       <div class="card-body">
-{{ semantic_text | markdownify }}
-</div>
-</div>
+      {{ semantic_text | markdownify }}
+      </div>
+    </div>
+  </div>
 
   <div class="card">
     <div class="card-header" id="headingEval">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse"
     data-target="#collapseEval" aria-expanded="true" aria-controls="collapseEval">
-  Datasets, experimental frameworks, and evaluations
+        Datasets, experimental frameworks, and evaluations
         </button>
       </h5>
     </div>
 
    <div id="collapseEval" class="collapse" aria-labelledby="headingEval" data-parent="#accordion">
       <div class="card-body">
-{{ eval_text | markdownify }}
-</div> </div>
+      {{ eval_text | markdownify }}
+      </div> 
+    </div>
+  </div>
 
   <div class="card">
     <div class="card-header" id="headingOtherTransform">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse"
     data-target="#collapseOtherTransform" aria-expanded="true" aria-controls="collapseOtherTransform">
-Transformation beyond repair
+      Transformation beyond repair
         </button>
       </h5>
     </div>
 
    <div id="collapseOtherTransform" class="collapse" aria-labelledby="headingOtherTransform" data-parent="#accordion">
       <div class="card-body">
-{{ other_transformation | markdownify }}
-</div> </div>
+        {{ other_transformation | markdownify }}
+      </div> 
+    </div>
+  </div>
 
   <div class="card">
     <div class="card-header" id="headingGenProg">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse"
     data-target="#collapseGenProg" aria-expanded="true" aria-controls="collapseGenProg">
-  GenProg
+      GenProg
         </button>
       </h5>
     </div>
 
    <div id="collapseGenProg" class="collapse" aria-labelledby="headingGenProg" data-parent="#accordion">
       <div class="card-body">
-{{ genrpog_text | markdownify }}
+        {{ genprog_text | markdownify }}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingRepair">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse"
+    data-target="#collapseRepair" aria-expanded="true" aria-controls="collapseRepair">
+          All new repair techniques
+        </button>
+      </h5>
+    </div>
+
+   <div id="collapseRepair" class="collapse" aria-labelledby="headingRepair" data-parent="#accordion">
+      <div class="card-body">
+    {{ all_repair | markdownify }}
   </div>
 </div>
 
 
+</div>
+</div>
+</div>
 
+## Search-based software engineering
+
+
+{% capture sbse-papers %}
+
+{% bibliography --query @*[project~=sbse-ai] %}
+
+{% endcapture *}
+
+Our interest in applying AI to software engineering started with search-based techniques.  Much of our work in this space has been repair-specific, though we have also looked at the application of GP and related search-based approaches for self-adaptive systems and knowledge reuse at the model level. Relevant publications (for both code and models/plans) include:
+
+
+<div id="sbse-accordian">
+  <div class="card">
+    <div class="card-header" id="headingSBSE">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSBSE" aria-expanded="true" aria-controls="collapseSBSE">
+  Search-based Software Engineering publications
+        </button>
+      </h5>
+    </div>
+
+   <div id="collapseSBSE" class="collapse" aria-labelledby="headingSBSE" data-parent="#sbse-accordian">
+      <div class="card-body">
+    {{ sbse-papers | markdownify }}
 </div>
 </div>
 </div>
 </div>
-
-
-
-#### Transformation Beyond Repair 
-
 
 
 ## Tools for Humans
