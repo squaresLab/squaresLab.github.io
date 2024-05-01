@@ -12,7 +12,7 @@ publications list, and consider contacting us directly or filing an issue with
 this page at
 [https://github.com/squaresLab/squaresLab.github.io](https://github.com/squaresLab/squaresLab.github.io).
 
-We try to be reasonably thorough, but note that this page does not attempt list every paper squaresLab has ever published; see [publications](/publications) for a complete list.
+We try to be reasonably thorough, but note that this page does not attempt to reference every paper squaresLab has ever published; see [publications](/publications) for a more complete list.
 
 ## Program Transformation and Repair
 
@@ -22,7 +22,7 @@ created and analyzed automatic program repair approaches to improve
 their performance and quality of created patches.  We also develop approaches to
 automate other types of transformation, including API updates and migration. This work has produced
 frameworks and toolsets for automatic program transformation and repair, as well
-as datasets for its evaluation. You might be looking for:
+as datasets for its evaluation. 
 
 {% capture transform_text %} 
 
@@ -54,8 +54,8 @@ and repair.
 * [S3 and JFix](https://xuanbachle.github.io/semanticsrepair/): semantics-based
     repair for Java programs.
 * [Static repair of framework directive violations](/publications/#coker21framefix)
-*  [SOSrepair](/publications/AfzalSOSRepair19) (and its predecessor, [SearchRepair](/publications/#KeSearchRepair2015)) SearchRepair and SOSRepair extend and use semantic code search over large repositories of candidate code bases to produce high-quality bug patches.
-* [Crayons](/publications/#cruz22crayons), statically repairing locking API violations in the Linux kernel.
+*  [SOSrepair](/publications/AfzalSOSRepair19) (and its predecessor, [SearchRepair](/publications/#KeSearchRepair2015)) SearchRepair and SOSRepair extend and use semantic code search over repositories of candidate code snippets to produce high-quality bug patches.
+* [Crayons](/publications/#cruz22crayons) statically repairs locking API violations in the Linux kernel.
 
 **Related Publications:**
 
@@ -92,7 +92,7 @@ covers most GenProg-related research, with links to the various GitHub
 repositories, results, and reproduction instructions, as well as a historical
 list of largely GenProg-specific papers (through about 2016).
 
-Papers specific to GP-based repair are listed under search-based softwre engineering, below
+Papers analyzing or evaluating specific components of GP-based repair are (additionally) listed under search-based software engineering.
 
 {% endcapture %}
 
@@ -209,7 +209,7 @@ For completeness, the following publications are those that either (a) overview 
 {% endcapture %}
 
 
-Our interest in applying AI to software engineering started with search-based techniques.  Much of our work in this space has been repair-specific, though we have also looked at the application of GP and related search-based approaches for self-adaptive systems and knowledge reuse at the model level. Relevant publications (for both code and models/plans, excluding those that are proposing new APR approaches) include:
+Our interest in applying AI to software engineering started with search-based techniques.  Much of our work in this space has been repair-specific, though we have also looked at the application of GP and related search-based approaches for self-adaptive systems and knowledge reuse at the model level as well. Relevant publications (for both code and models/plans, excluding those that propose new APR approaches, with incidental contributions in SBSE algorithm design) include:
 
 
 <div id="sbseAccordian">
@@ -260,12 +260,61 @@ address via new testing and analysis techniques.
 
 </div>
 
+## Decompilation and reverse engineering
 
-## Tools for Humans
-**Related Publications:**
-- [A Study on the Use of IDE Features for Debugging](/publications/#AfzalMSRChallenge2018)
-- [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
+{% capture decomp_papers %}
 
+{% bibliography --query @*[project~=decomp] %}
+
+{% endcapture %}
+
+Our work on improving developer experiences by integrating program analysis with AI includes a line of research on reverse engineering, specifically to improve decompilation and decompiler output.
+
+<div id="decompAccordian">
+
+  <div class="card">
+    <div class="card-header" id="headingDecomp">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDecomp" aria-expanded="true" aria-controls="collapseDecomp">
+        Decompilation and reverse engineering 
+        </button>
+      </h5>
+    </div>
+    <div id="collapseDecomp" class="collapse" aria-labelledby="headingDecomp" data-parent="#decompAccordian">
+      <div class="card-body">{{ decomp_papers | markdownify }}</div>
+    </div>
+  </div>
+
+</div>
+
+## AI and LLMs
+
+{% capture ai_papers %}
+
+{% bibliography --query @*[project~=ai] %}
+
+{% endcapture %}
+
+
+Our work often leverages advances in AI to develop new development tools and QA approaches to improve testing and program transformation.  (This list excludes SBSE-specific work.)
+
+
+<div id="aiAccordian">
+
+  <div class="card">
+    <div class="card-header" id="headingAi">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseAi" aria-expanded="true" aria-controls="collapseAi">
+        AI and LLMs for SE
+        </button>
+      </h5>
+    </div>
+    <div id="collapseAi" class="collapse" aria-labelledby="headingAi" data-parent="#aiAccordian">
+      <div class="card-body">{{ ai_papers | markdownify }}</div>
+    </div>
+  </div>
+
+</div>
 
 ## Understanding Develop[ment/er] Practices
 
@@ -278,6 +327,13 @@ study developers and the software they produce to understand both the current
 state of software quality and which factors affect software quality.
 
 #### Selected Developer Studies
+
+## Tools for Humans
+**Related Publications:**
+- [A Study on the Use of IDE Features for Debugging](/publications/#AfzalMSRChallenge2018)
+- [A Deeper Look into Bug Fixes: Patterns, Replacements, Deletions, and Additions](/publications/#SotoMSRChallenge2016)
+
+
 
 * [Framework Debugging](https://squareslab.github.io/materials/CokerQualitative2019.pdf): an investigation into the challenges of debugging framework application problems. One important finding was that in framework debugging, developers have a difficult time determining the correct way to implement a fix.
 * [Social Attributes on Commit Integration](https://squareslab.github.io/materials/AfzalMSRChallenge2018.pdf): a quick investigation on how the GitHub social attributes of developers can be used to predict if a commit will be accepted or not.
