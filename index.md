@@ -19,14 +19,15 @@ squaresLab@CMU is led by (Associate) Professor [Claire Le
 Goues](https://www.clairelegoues.com), and also includes:
 
 *   [He Ye](https://heye.me/), Postdoctoral Scholar
-*   Luke Dramko
-*   Trenton Tabor
-*   [Daniel Ramos](https://sat.inesc-id.pt/~drr/)
-*   [Kush Jain](http://www.kushjain.com)
 *   [Aidan Yang](https://aidanby.github.io/)
-*   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
 *   Claudia Mamede
+*   [Daniel Ramos](https://sat.inesc-id.pt/~drr/)
+*   [Harrison Green](https://harrisongreen.me/)
+*   [Kush Jain](http://www.kushjain.com)
+*   Luke Dramko
 *   [Nikitha Rao](https://raonikitha.github.io/)
+*   Trenton Tabor
+*   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
 *   [Paulo Santos](https://pcanelas.com/about/) (honorary member)
 
 We have student and postdoc alums:
