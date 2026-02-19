@@ -24,7 +24,7 @@ Goues](https://www.clairelegoues.com), and also includes:
 *   [Daniel Ramos](https://sat.inesc-id.pt/~drr/)
 *   [Harrison Green](https://harrisongreen.me/)
 *   [Kush Jain](http://www.kushjain.com)
-*   Luke Dramko
+*   [Luke Dramko](https://lukedramko.github.io/)
 *   [Nikitha Rao](https://raonikitha.github.io/)
 *   Trenton Tabor
 *   [Tobias Dürschmid](https://tobiasduerschmid.github.io/)
