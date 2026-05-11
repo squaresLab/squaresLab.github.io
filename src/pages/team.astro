@@ -178,8 +178,8 @@ const photos = (yaml.load(photosRaw) as { src: string; alt: string }[]) || [];
                 ) : (
                   <span class="font-medium text-slate-nav">{m.data.name}</span>
                 )}
-                {m.data.currentPosition && (
-                  <span class="text-gray-secondary">{m.data.currentPosition}</span>
+                {m.data.firstPosition && (
+                  <span class="text-gray-secondary">{m.data.firstPosition}</span>
                 )}
                 {m.data.endYear && (
                   <span class="text-gray-secondary ml-auto shrink-0">{m.data.endYear}</span>

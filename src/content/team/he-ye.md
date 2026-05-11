@@ -2,7 +2,9 @@
 name: He Ye
 website: https://heye.me/
 role: postdoc
-status: current
+status: alumni
 researchArea: Program Repair
 startYear: 2023
+endYear: 2025
+firstPosition: Assistant Professor, University College London
 ---

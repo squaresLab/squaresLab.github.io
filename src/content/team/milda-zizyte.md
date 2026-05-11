@@ -1,9 +1,10 @@
 ---
 name: Milda Zizyte
 website: https://vivo.brown.edu/display/mzizyte
-role: phd
+role: postdoc
 status: alumni
 researchArea: SE for Robotics
-startYear: 2018
-endYear: 2023
+startYear: 2020
+endYear: 2021
+firstPosition: Lecturer in Computer Science, Brown University
 ---

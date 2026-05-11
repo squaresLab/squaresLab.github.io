@@ -12,7 +12,7 @@ const team = defineCollection({
     researchArea: z.string().optional(),
     startYear: z.number(),
     endYear: z.number().optional(),
-    currentPosition: z.string().optional(),
+    firstPosition: z.string().optional(),
     sortOrder: z.number().optional(),
   }),
 });

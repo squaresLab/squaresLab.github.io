@@ -1,6 +1,6 @@
 ---
 name: Yiwei Lyu
-role: phd
+role: undergrad
 status: alumni
 startYear: 2018
 endYear: 2023
