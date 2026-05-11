@@ -1,0 +1,104 @@
+---
+import type { Publication } from '../lib/types';
+
+interface Props {
+  pub: Publication;
+}
+
+const { pub } = Astro.props;
+
+// Build links array from materials and custom fields
+interface PubLink {
+  label: string;
+  href: string;
+}
+
+const links: PubLink[] = [];
+
+if (pub.materials.pdf) {
+  links.push({ label: 'PDF', href: pub.materials.pdf });
+}
+if (pub.materials.slidesPdf) {
+  links.push({ label: 'Slides (PDF)', href: pub.materials.slidesPdf });
+}
+if (pub.materials.slidesPptx) {
+  links.push({ label: 'Slides (PPTX)', href: pub.materials.slidesPptx });
+}
+if (pub.materials.slidesKey) {
+  links.push({ label: 'Slides (Key)', href: pub.materials.slidesKey });
+}
+if (pub.materials.slidesOdp) {
+  links.push({ label: 'Slides (ODP)', href: pub.materials.slidesOdp });
+}
+if (pub.materials.posterPdf) {
+  links.push({ label: 'Poster', href: pub.materials.posterPdf });
+}
+if (pub.video) {
+  links.push({ label: 'Video', href: pub.video });
+}
+if (pub.code) {
+  links.push({ label: 'Code', href: pub.code });
+}
+if (pub.tool) {
+  links.push({ label: 'Tool', href: pub.tool });
+}
+if (pub.data) {
+  links.push({ label: 'Data', href: pub.data });
+}
+if (pub.results) {
+  links.push({ label: 'Results', href: pub.results });
+}
+if (pub.website) {
+  links.push({ label: 'Website', href: pub.website });
+}
+if (pub.doi) {
+  links.push({ label: 'DOI', href: `https://doi.org/${pub.doi}` });
+}
+---
+
+<div class="mb-3">
+  <div class="text-sm font-bold">{pub.title}</div>
+  <div class="text-xs text-gray-secondary">
+    {pub.authors.join(', ')}{pub.venue ? `. ${pub.venue}, ${pub.year}.` : `. ${pub.year}.`}
+  </div>
+  {(links.length > 0 || pub.bibtex) && (
+    <div class="text-xs mt-0.5">
+      {links.map((link, i) => (
+        <>
+          {i > 0 && <span class="mx-1">&middot;</span>}
+          <a href={link.href} class="text-red-cmu hover:underline" target="_blank" rel="noopener noreferrer">{link.label}</a>
+        </>
+      ))}
+      {pub.bibtex && (
+        <>
+          {links.length > 0 && <span class="mx-1">&middot;</span>}
+          <button
+            type="button"
+            class="text-red-cmu hover:underline cursor-pointer"
+            data-bibtex-toggle={pub.key}
+          >
+            BibTeX
+          </button>
+        </>
+      )}
+    </div>
+  )}
+  {pub.bibtex && (
+    <pre
+      id={`bibtex-${pub.key}`}
+      class="hidden mt-2 p-3 bg-gray-hero text-xs overflow-x-auto rounded"
+    >{pub.bibtex}</pre>
+  )}
+</div>
+
+<script>
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    const key = target.getAttribute('data-bibtex-toggle');
+    if (!key) return;
+    const pre = document.getElementById(`bibtex-${key}`);
+    if (pre) {
+      pre.classList.toggle('hidden');
+    }
+  });
+</script>
