@@ -1,0 +1,64 @@
+---
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { href: '/research', label: 'Research' },
+  { href: '/publications', label: 'Publications' },
+  { href: '/team', label: 'Team' },
+];
+---
+
+<nav class="bg-slate-nav border-b-[3px] border-red-cmu">
+  <div class="max-w-content mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="/" class="text-white font-extrabold text-lg no-underline">
+      squares<span class="text-red-cmu">Lab</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="hidden md:flex gap-6">
+      {links.map(({ href, label }) => (
+        <a
+          href={href}
+          class:list={[
+            'text-sm font-bold no-underline transition-colors',
+            currentPath.startsWith(href) ? 'text-red-cmu' : 'text-gray-300 hover:text-red-cmu',
+          ]}
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden text-white"
+      aria-label="Toggle menu"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-slate-nav px-4 pb-4">
+    {links.map(({ href, label }) => (
+      <a
+        href={href}
+        class:list={[
+          'block py-2 text-sm font-bold no-underline',
+          currentPath.startsWith(href) ? 'text-red-cmu' : 'text-gray-300',
+        ]}
+      >
+        {label}
+      </a>
+    ))}
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>
