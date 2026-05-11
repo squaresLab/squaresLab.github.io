@@ -1,10 +1,189 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { getPublications } from '../lib/publications';
+import { getHighlights } from '../lib/highlights';
+
+const projects = await getCollection('projects');
+const sortedProjects = projects.sort(
+  (a, b) => (a.data.sortOrder ?? 99) - (b.data.sortOrder ?? 99)
+);
+
+const allMembers = await getCollection('team');
+const currentMembers = allMembers
+  .filter((m) => m.data.status === 'current')
+  .sort((a, b) => (a.data.sortOrder ?? 99) - (b.data.sortOrder ?? 99));
+
+const publications = getPublications();
+const recentPubs = publications.slice(0, 5);
+
+const highlights = getHighlights(5);
+
+/** Extract initials from a full name. */
+function getInitials(name: string): string {
+  return name
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join('')
+    .toUpperCase()
+    .slice(0, 2);
+}
+
+/** Format a date string as YYYY-MM. */
+function formatMonth(dateStr: string): string {
+  const d = new Date(dateStr);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  return `${y}-${m}`;
+}
+
+const previewMembers = currentMembers.slice(0, 6);
+const extraCount = currentMembers.length - previewMembers.length;
 ---
 
 <BaseLayout title="Home">
-  <main class="max-w-content mx-auto p-8">
-    <h1 class="text-3xl font-extrabold">squaresLab</h1>
-    <p class="text-gray-secondary mt-2">Site under construction. Migrating from Jekyll to Astro.</p>
-  </main>
+  {/* Hero */}
+  <section class="bg-gradient-to-br from-gray-hero to-gray-hero-end py-16">
+    <div class="max-w-content mx-auto px-8 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold">
+        squares<span class="text-red-cmu">Lab</span>
+      </h1>
+      <p class="text-gray-secondary mt-3 text-lg max-w-xl mx-auto">
+        Software Quality in Real and Evolving Systems
+      </p>
+      <p class="text-gray-secondary mt-1 text-sm">
+        Carnegie Mellon University
+      </p>
+      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+        <a
+          href="/research"
+          class="bg-red-cmu text-white px-5 py-2 rounded text-sm font-semibold no-underline hover:opacity-90 transition-opacity"
+        >
+          Our Research
+        </a>
+        <a
+          href="/publications"
+          class="border border-slate-nav text-slate-nav px-5 py-2 rounded text-sm font-semibold no-underline hover:bg-slate-nav hover:text-white transition-colors"
+        >
+          Publications
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* Research Areas */}
+  <section class="border-t-2 border-red-cmu">
+    <div class="max-w-content mx-auto px-8 py-10">
+      <h2 class="text-xl font-bold mb-6">Research Areas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sortedProjects.map((project) => (
+          <a
+            href="/research"
+            class="block border-l-[3px] border-red-cmu pl-4 no-underline group"
+          >
+            <p class="font-bold text-slate-nav group-hover:text-red-cmu transition-colors">
+              {project.data.name}
+            </p>
+            <p class="text-sm text-gray-secondary mt-1">
+              {project.data.shortDescription}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Team Preview */}
+  <section class="bg-gray-50">
+    <div class="max-w-content mx-auto px-8 py-10">
+      <h2 class="text-xl font-bold mb-6">Team</h2>
+      <div class="flex items-center gap-3 flex-wrap">
+        {previewMembers.map((member) => (
+          <div class="flex flex-col items-center gap-1">
+            <div class="w-12 h-12 rounded-full border-2 border-red-cmu bg-gray-hero flex items-center justify-center text-sm font-bold text-slate-nav">
+              {getInitials(member.data.name)}
+            </div>
+            <span class="text-xs text-gray-secondary">{member.data.name.split(' ')[0]}</span>
+          </div>
+        ))}
+        {extraCount > 0 && (
+          <a
+            href="/team"
+            class="text-sm text-red-cmu font-semibold no-underline hover:underline ml-2"
+          >
+            +{extraCount} more &rarr;
+          </a>
+        )}
+      </div>
+      <a
+        href="/team"
+        class="inline-block mt-4 text-sm text-red-cmu font-semibold no-underline hover:underline"
+      >
+        View full team &rarr;
+      </a>
+    </div>
+  </section>
+
+  {/* Recent Publications */}
+  <section>
+    <div class="max-w-content mx-auto px-8 py-10">
+      <h2 class="text-xl font-bold mb-6">Recent Publications</h2>
+      <div class="space-y-4">
+        {recentPubs.map((pub) => (
+          <div class="border-b border-gray-subtle pb-3">
+            {pub.venue && (
+              <span class="text-xs text-red-cmu font-semibold">
+                {pub.venue}
+              </span>
+            )}
+            <p class="text-sm font-semibold text-slate-nav mt-0.5">
+              {pub.title}
+            </p>
+            <p class="text-xs text-gray-secondary mt-0.5">
+              {pub.authors.join(', ')}
+            </p>
+          </div>
+        ))}
+      </div>
+      <a
+        href="/publications"
+        class="inline-block mt-4 text-sm text-red-cmu font-semibold no-underline hover:underline"
+      >
+        View all {publications.length} publications &rarr;
+      </a>
+    </div>
+  </section>
+
+  {/* Highlights */}
+  {highlights.length > 0 && (
+    <section class="bg-gray-50">
+      <div class="max-w-content mx-auto px-8 py-10">
+        <h2 class="text-xl font-bold mb-6">Highlights</h2>
+        <div class="space-y-3">
+          {highlights.map((h) => (
+            <div class="flex gap-4 items-start">
+              <span class="text-xs text-gray-secondary whitespace-nowrap pt-0.5">
+                {formatMonth(h.date)}
+              </span>
+              <div>
+                {h.link ? (
+                  <a
+                    href={h.link}
+                    class="text-sm font-semibold text-slate-nav no-underline hover:text-red-cmu transition-colors"
+                  >
+                    {h.title}
+                  </a>
+                ) : (
+                  <p class="text-sm font-semibold text-slate-nav">{h.title}</p>
+                )}
+                {h.description && (
+                  <p class="text-xs text-gray-secondary mt-0.5">{h.description}</p>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 </BaseLayout>
