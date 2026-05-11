@@ -1,0 +1,84 @@
+---
+import type { Publication } from '../lib/types';
+
+interface Props {
+  name: string;
+  tag: string;
+  shortDescription: string;
+  tools?: { name: string; url?: string }[];
+  publications: Publication[];
+  body: string;
+}
+
+const { name, tag, shortDescription, tools, publications, body } = Astro.props;
+
+const recentPubs = publications.slice(0, 8);
+---
+
+<div class="border border-gray-subtle rounded-lg overflow-hidden" data-research-card>
+  <button
+    class="w-full text-left px-5 py-4 flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors"
+    data-research-toggle
+  >
+    <div class="border-l-[3px] border-red-cmu pl-3">
+      <span class="font-bold text-slate-nav">{name}</span>
+      <p class="text-gray-secondary text-sm mt-0.5">{shortDescription}</p>
+    </div>
+    <span class="text-gray-secondary text-sm whitespace-nowrap shrink-0">
+      {publications.length} {publications.length === 1 ? 'paper' : 'papers'}
+    </span>
+  </button>
+
+  <div class="hidden border-t border-gray-subtle px-5 py-5 space-y-5" data-research-detail>
+    <div class="prose prose-sm max-w-none text-slate-nav" set:html={body} />
+
+    {tools && tools.length > 0 && (
+      <div>
+        <h4 class="text-sm font-semibold text-slate-nav mb-2">Tools &amp; Frameworks</h4>
+        <div class="flex flex-wrap gap-2">
+          {tools.map((t) =>
+            t.url ? (
+              <a
+                href={t.url}
+                class="bg-white border border-gray-subtle rounded px-2 py-0.5 text-xs text-slate-nav hover:text-red-cmu hover:border-red-cmu no-underline transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t.name}
+              </a>
+            ) : (
+              <span class="bg-white border border-gray-subtle rounded px-2 py-0.5 text-xs text-slate-nav">
+                {t.name}
+              </span>
+            )
+          )}
+        </div>
+      </div>
+    )}
+
+    {recentPubs.length > 0 && (
+      <div>
+        <h4 class="text-sm font-semibold text-slate-nav mb-2">Recent Publications</h4>
+        <ul class="space-y-2">
+          {recentPubs.map((pub) => (
+            <li class="text-sm">
+              <span class="text-slate-nav">{pub.title}</span>
+              <span class="text-gray-secondary">
+                {' '}&mdash; {pub.authors.slice(0, 3).join(', ')}{pub.authors.length > 3 ? ' et al.' : ''}{pub.venue ? `, ${pub.venue}` : ''} ({pub.year})
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {publications.length > 0 && (
+      <a
+        href={`/publications?topic=${tag}`}
+        class="inline-block text-sm text-red-cmu hover:underline"
+      >
+        View all {publications.length} publications &rarr;
+      </a>
+    )}
+  </div>
+</div>

@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ResearchCard from '../components/ResearchCard.astro';
+import { getPublications } from '../lib/publications';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+const publications = getPublications();
+
+// Sort projects by sortOrder
+const sortedProjects = projects.sort(
+  (a, b) => (a.data.sortOrder ?? 99) - (b.data.sortOrder ?? 99)
+);
+
+// Build a map of project tag -> filtered publications
+function getProjectPubs(tag: string) {
+  return publications.filter((p) => p.projects.includes(tag));
+}
+---
+
+<BaseLayout title="Research">
+  <section class="bg-gradient-to-b from-gray-hero to-gray-hero-end py-10">
+    <div class="max-w-content mx-auto px-8">
+      <h1 class="text-3xl font-extrabold">Research</h1>
+      <p class="text-gray-secondary mt-1">Click a card to learn more about each research area</p>
+    </div>
+  </section>
+
+  <div class="max-w-content mx-auto px-8 py-8 space-y-4">
+    {sortedProjects.map((project) => {
+      const projectPubs = getProjectPubs(project.data.tag);
+      return (
+        <ResearchCard
+          name={project.data.name}
+          tag={project.data.tag}
+          shortDescription={project.data.shortDescription}
+          tools={project.data.tools}
+          publications={projectPubs}
+          body={project.body ?? ''}
+        />
+      );
+    })}
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('[data-research-card]').forEach((card) => {
+    const toggle = card.querySelector('[data-research-toggle]');
+    const detail = card.querySelector('[data-research-detail]');
+    toggle?.addEventListener('click', () => {
+      detail?.classList.toggle('hidden');
+    });
+  });
+</script>
