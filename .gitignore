@@ -4,3 +4,9 @@ _site/
 .DS_Store
 Gemfile.lock
 todos.txt
+
+# Astro
+node_modules/
+dist/
+.astro/
+.superpowers/
