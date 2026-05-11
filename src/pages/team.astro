@@ -32,6 +32,16 @@ const sortedAlumni = alumni.sort((a, b) => {
   if (yearDiff !== 0) return yearDiff;
   return a.data.name.localeCompare(b.data.name);
 });
+
+
+const photos = [
+  { src: '/img/GroupBowlingPhoto.JPG', alt: 'squaresLab after a friendly but competitive bowling excursion' },
+  { src: '/img/GroupEscapeRoomPhoto.jpg', alt: "squaresLab after successfully solving Carnegie'$ Million$ at Escape Room Pittsburgh" },
+  { src: '/img/GroupAxePhoto.jpg', alt: 'squaresLab in our squaresLab t-shirts after an axe throwing social event' },
+  { src: '/img/GroupApples.jpg', alt: 'squaresLab goes apple picking' },
+  { src: '/img/GroupTopgolfPhoto.jpg', alt: 'squaresLab goes to Topgolf' },
+  { src: '/img/GroupBowling2.jpg', alt: 'squaresLab the next generation goes bowling, too' },
+];
 ---
 
 <BaseLayout title="Team">
@@ -39,6 +49,18 @@ const sortedAlumni = alumni.sort((a, b) => {
     <div class="max-w-content mx-auto px-8">
       <h1 class="text-3xl font-extrabold">Team</h1>
       <p class="text-gray-secondary mt-1">Current and former members of squaresLab</p>
+    </div>
+  </section>
+
+  {/* Photo Gallery */}
+  <section class="max-w-content mx-auto px-8 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {photos.map((photo) => (
+        <figure class="m-0">
+          <img src={photo.src} alt={photo.alt} class="w-full rounded-lg" loading="lazy" />
+          <figcaption class="text-xs text-gray-secondary mt-1 italic">{photo.alt}</figcaption>
+        </figure>
+      ))}
     </div>
   </section>
 
@@ -107,6 +129,14 @@ const sortedAlumni = alumni.sort((a, b) => {
         </div>
       </section>
     )}
+
+    {/* REUSE */}
+    <section class="text-sm text-gray-secondary">
+      <p>
+        We have also worked with a number of wonderful undergraduates through the{' '}
+        <a href="https://reuse.cs.cmu.edu" class="text-red-cmu no-underline hover:underline" target="_blank" rel="noopener">REUSE</a> program. You should apply!
+      </p>
+    </section>
 
     {/* Alumni */}
     {sortedAlumni.length > 0 && (
