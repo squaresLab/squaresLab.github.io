@@ -21,9 +21,13 @@ const avatarSize = isLarge ? 'w-16 h-16 text-xl' : 'w-10 h-10 text-sm';
 
 {isLarge ? (
   <div class="flex items-center gap-4 py-3">
-    <div class={`${avatarSize} rounded-full bg-gray-200 ring-2 ring-red-cmu flex items-center justify-center font-bold text-gray-secondary shrink-0`}>
-      {initials}
-    </div>
+    {photo ? (
+      <img src={photo} alt={name} class={`${avatarSize} rounded-full ring-2 ring-red-cmu object-cover shrink-0`} />
+    ) : (
+      <div class={`${avatarSize} rounded-full bg-gray-200 ring-2 ring-red-cmu flex items-center justify-center font-bold text-gray-secondary shrink-0`}>
+        {initials}
+      </div>
+    )}
     <div>
       {website ? (
         <a href={website} class="text-slate-nav hover:text-red-cmu font-semibold no-underline" target="_blank" rel="noopener noreferrer">
@@ -39,9 +43,13 @@ const avatarSize = isLarge ? 'w-16 h-16 text-xl' : 'w-10 h-10 text-sm';
   </div>
 ) : (
   <div class="bg-white rounded-lg p-4 flex items-center gap-3">
-    <div class={`${avatarSize} rounded-full bg-gray-200 ring-2 ring-red-cmu flex items-center justify-center font-bold text-gray-secondary shrink-0`}>
-      {initials}
-    </div>
+    {photo ? (
+      <img src={photo} alt={name} class={`${avatarSize} rounded-full ring-2 ring-red-cmu object-cover shrink-0`} />
+    ) : (
+      <div class={`${avatarSize} rounded-full bg-gray-200 ring-2 ring-red-cmu flex items-center justify-center font-bold text-gray-secondary shrink-0`}>
+        {initials}
+      </div>
+    )}
     <div>
       {website ? (
         <a href={website} class="text-slate-nav hover:text-red-cmu font-semibold no-underline text-sm" target="_blank" rel="noopener noreferrer">
