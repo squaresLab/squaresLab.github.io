@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TeamMember from '../components/TeamMember.astro';
+import { getCollection } from 'astro:content';
+
+const allMembers = await getCollection('team');
+
+// Partition by status
+const current = allMembers.filter((m) => m.data.status === 'current');
+const alumni = allMembers.filter((m) => m.data.status === 'alumni');
+
+// Current members by role
+const faculty = current
+  .filter((m) => m.data.role === 'faculty')
+  .sort((a, b) => (a.data.sortOrder ?? 99) - (b.data.sortOrder ?? 99));
+
+const postdocs = current
+  .filter((m) => m.data.role === 'postdoc')
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const phdStudents = current
+  .filter((m) => m.data.role === 'phd')
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const otherCurrent = current
+  .filter((m) => ['masters', 'undergrad', 'visitor'].includes(m.data.role))
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// Alumni sorted by endYear descending, then name
+const sortedAlumni = alumni.sort((a, b) => {
+  const yearDiff = (b.data.endYear ?? 0) - (a.data.endYear ?? 0);
+  if (yearDiff !== 0) return yearDiff;
+  return a.data.name.localeCompare(b.data.name);
+});
+---
+
+<BaseLayout title="Team">
+  <section class="bg-gradient-to-b from-gray-hero to-gray-hero-end py-10">
+    <div class="max-w-content mx-auto px-8">
+      <h1 class="text-3xl font-extrabold">Team</h1>
+      <p class="text-gray-secondary mt-1">Current and former members of squaresLab</p>
+    </div>
+  </section>
+
+  <div class="max-w-content mx-auto px-8 py-8 space-y-10">
+    {/* Faculty */}
+    <section>
+      <h2 class="text-xl font-bold border-t-2 border-red-cmu pt-4 mb-4">Faculty</h2>
+      {faculty.map((m) => (
+        <TeamMember
+          name={m.data.name}
+          website={m.data.website}
+          researchArea={m.data.researchArea}
+          photo={m.data.photo}
+          size="large"
+        />
+      ))}
+    </section>
+
+    {/* Postdocs */}
+    {postdocs.length > 0 && (
+      <section>
+        <h2 class="text-xl font-bold mb-4">Postdoctoral Researchers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {postdocs.map((m) => (
+            <TeamMember
+              name={m.data.name}
+              website={m.data.website}
+              researchArea={m.data.researchArea}
+              photo={m.data.photo}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* PhD Students */}
+    {phdStudents.length > 0 && (
+      <section>
+        <h2 class="text-xl font-bold mb-4">PhD Students</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {phdStudents.map((m) => (
+            <TeamMember
+              name={m.data.name}
+              website={m.data.website}
+              researchArea={m.data.researchArea}
+              photo={m.data.photo}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* Other current members */}
+    {otherCurrent.length > 0 && (
+      <section>
+        <h2 class="text-xl font-bold mb-4">Other Members</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {otherCurrent.map((m) => (
+            <TeamMember
+              name={m.data.name}
+              website={m.data.website}
+              researchArea={m.data.researchArea}
+              photo={m.data.photo}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* Alumni */}
+    {sortedAlumni.length > 0 && (
+      <section>
+        <details>
+          <summary class="text-xl font-bold mb-4 cursor-pointer list-none">
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 transition-transform details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+              Alumni ({sortedAlumni.length})
+            </span>
+          </summary>
+          <div class="space-y-2 mt-2">
+            {sortedAlumni.map((m) => (
+              <div class="flex items-baseline gap-2 text-sm py-1 border-b border-gray-subtle">
+                {m.data.website ? (
+                  <a href={m.data.website} class="text-slate-nav hover:text-red-cmu font-medium no-underline" target="_blank" rel="noopener noreferrer">
+                    {m.data.name}
+                  </a>
+                ) : (
+                  <span class="font-medium text-slate-nav">{m.data.name}</span>
+                )}
+                {m.data.currentPosition && (
+                  <span class="text-gray-secondary">{m.data.currentPosition}</span>
+                )}
+                {m.data.endYear && (
+                  <span class="text-gray-secondary ml-auto shrink-0">{m.data.endYear}</span>
+                )}
+              </div>
+            ))}
+          </div>
+        </details>
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  details[open] .details-arrow {
+    transform: rotate(90deg);
+  }
+</style>

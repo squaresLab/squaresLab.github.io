@@ -1,0 +1,58 @@
+---
+interface Props {
+  name: string;
+  website?: string;
+  researchArea?: string;
+  photo?: string;
+  size?: 'large' | 'small';
+}
+
+const { name, website, researchArea, photo, size = 'small' } = Astro.props;
+
+// Generate initials from name (first letter of first and last name)
+const parts = name.trim().split(/\s+/);
+const initials = parts.length >= 2
+  ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+  : parts[0][0].toUpperCase();
+
+const isLarge = size === 'large';
+const avatarSize = isLarge ? 'w-16 h-16 text-xl' : 'w-10 h-10 text-sm';
+---
+
+{isLarge ? (
+  <div class="flex items-center gap-4 py-3">
+    <div class={`${avatarSize} rounded-full bg-gray-200 ring-2 ring-red-cmu flex items-center justify-center font-bold text-gray-secondary shrink-0`}>
+      {initials}
+    </div>
+    <div>
+      {website ? (
+        <a href={website} class="text-slate-nav hover:text-red-cmu font-semibold no-underline" target="_blank" rel="noopener noreferrer">
+          {name}
+        </a>
+      ) : (
+        <span class="font-semibold text-slate-nav">{name}</span>
+      )}
+      {researchArea && (
+        <p class="text-gray-secondary text-sm mt-0.5">{researchArea}</p>
+      )}
+    </div>
+  </div>
+) : (
+  <div class="bg-white rounded-lg p-4 flex items-center gap-3">
+    <div class={`${avatarSize} rounded-full bg-gray-200 ring-2 ring-red-cmu flex items-center justify-center font-bold text-gray-secondary shrink-0`}>
+      {initials}
+    </div>
+    <div>
+      {website ? (
+        <a href={website} class="text-slate-nav hover:text-red-cmu font-semibold no-underline text-sm" target="_blank" rel="noopener noreferrer">
+          {name}
+        </a>
+      ) : (
+        <span class="font-semibold text-slate-nav text-sm">{name}</span>
+      )}
+      {researchArea && (
+        <p class="text-gray-secondary text-xs mt-0.5">{researchArea}</p>
+      )}
+    </div>
+  </div>
+)}
