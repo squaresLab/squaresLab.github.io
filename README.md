@@ -1,48 +1,41 @@
-[![Build Status](https://travis-ci.org/squaresLab/squaresLab.github.io.svg?branch=update)](https://travis-ci.org/squaresLab/squaresLab.github.io)
+# squaresLab.github.io
 
-## Adding your paper to the squaresLab site
+Website for the squaresLab research group at Carnegie Mellon University.
 
-Adding your paper is now easy! Just drop a BibTeX entry in
-`_bibliography/publications.bib` on the `update` branch and GitHub actions will take
-care of the rest. If you have a PDF of the paper, slides, or a poster just drop
-them in the `materials` directory, naming them `key.pdf`, `key.slides.pdf`, and
-`key.poster.pdf` respectively. Jekyll-Scholar will automatically pick these up
-and add the appropriate links. Note: The site is refreshed every few minutes, so
-you may have to wait to see your changes.
+## Development
 
-Code, data, tools, and large results should be not be directly served from this
-site. Instead, the files should be hosted on another site and linked to on our
-page. You
-can add links to these by adding `code`, `data`, `tools`, or `results` fields to
-the BibTeX entries.
-
-Also, remember to add your paper to the projects page by editing the projects.md file.
-
-**NOTE**: Updates should be pushed to `update` and not `master`. GitHub serves
-the website from `master` and that branch is updated automatically.
-
-## Inserting a reference on a page
-
-It is also possible to insert a reference on a page using the `reference` Liquid
-tag. For an example, see SearchRepair on the Projects page. The format of the
-tag is `{% reference key %}`.
-
-## Inserting an new main page photo
-
-Put the photo you want to add in the the assets/img directory. Then open 
-\_data/MainPhotos.yml and add a new photo item, following the same structure 
-of the other items.
-
-## Changing the css of all pages
-
-If you would like to add a css change across all pages, you can add a css rule
-in assets/css/customCss.css.
-
-## Test your changes
-
-Before pushing to the website, you may want to check that your changes look the way you expect. Just run the website locally with:
+```bash
+npm install
+npm run dev     # Start dev server at localhost:4321
+npm run build   # Build to dist/
 ```
-bundle exec jekyll serve
-```
-You can then see the website, typically at `127.0.0.1:4000`. (You may need to `bundle install` first)
 
+## Adding a publication
+
+1. Add a BibTeX entry to `_bibliography/publications.bib`
+2. Drop materials in `public/materials/` named `KEY.pdf`, `KEY.slides.pdf`, etc.
+3. Push to the `update` branch. GitHub Actions deploys automatically.
+
+## Adding a team member
+
+Create a file in `src/content/team/firstname-lastname.md`:
+
+```yaml
+---
+name: Your Name
+website: https://your-site.com
+role: phd
+status: current
+researchArea: Your Area
+startYear: 2024
+---
+Optional bio here.
+```
+
+## Editing research areas
+
+Edit files in `src/content/projects/`. Each has a `tag` field that matches the `project` field in BibTeX entries.
+
+## Deployment
+
+Push to `update`. GitHub Actions builds and deploys to GitHub Pages automatically.
