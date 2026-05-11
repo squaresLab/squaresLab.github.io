@@ -19,14 +19,10 @@ const recentPubs = publications.slice(0, 5);
 
 const highlights = getHighlights(5);
 
-/** Extract initials from a full name. */
+/** Extract initials: first letter uppercased + first letter of each subsequent word. */
 function getInitials(name: string): string {
-  return name
-    .split(/\s+/)
-    .map((part) => part[0])
-    .join('')
-    .toUpperCase()
-    .slice(0, 2);
+  const parts = name.trim().split(/\s+/);
+  return parts[0][0].toUpperCase() + parts.slice(1).map((p) => p[0]).join('');
 }
 
 /** Format a date string as YYYY-MM. */
