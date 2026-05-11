@@ -29,12 +29,22 @@ const otherCurrent = current
   .filter((m) => ['masters', 'undergrad', 'visitor'].includes(m.data.role))
   .sort((a, b) => a.data.name.localeCompare(b.data.name));
 
-// Alumni sorted by endYear descending, then name
-const sortedAlumni = alumni.sort((a, b) => {
+// Alumni grouped by role, each sorted by endYear descending then name
+const byEndYearThenName = (a: any, b: any) => {
   const yearDiff = (b.data.endYear ?? 0) - (a.data.endYear ?? 0);
   if (yearDiff !== 0) return yearDiff;
   return a.data.name.localeCompare(b.data.name);
-});
+};
+
+const alumniGroups = [
+  { label: 'Postdoctoral Scholars', members: alumni.filter((m) => m.data.role === 'postdoc').sort(byEndYearThenName) },
+  { label: 'PhD Students', members: alumni.filter((m) => m.data.role === 'phd').sort(byEndYearThenName) },
+  { label: 'Masters Students', members: alumni.filter((m) => m.data.role === 'masters').sort(byEndYearThenName) },
+  { label: 'Undergraduate Researchers', members: alumni.filter((m) => m.data.role === 'undergrad').sort(byEndYearThenName) },
+  { label: 'Visiting Scholars', members: alumni.filter((m) => m.data.role === 'visitor').sort(byEndYearThenName) },
+].filter((g) => g.members.length > 0);
+
+const totalAlumni = alumni.length;
 
 // Load photos from data file
 const photosRaw = await fs.readFile(path.resolve('src/data/photos.yaml'), 'utf-8');
@@ -157,7 +167,7 @@ const photos = (yaml.load(photosRaw) as { src: string; alt: string }[]) || [];
     </section>
 
     {/* Alumni */}
-    {sortedAlumni.length > 0 && (
+    {totalAlumni > 0 && (
       <section>
         <details>
           <summary class="text-xl font-bold mb-4 cursor-pointer list-none">
@@ -165,25 +175,32 @@ const photos = (yaml.load(photosRaw) as { src: string; alt: string }[]) || [];
               <svg class="w-5 h-5 transition-transform details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
-              Alumni ({sortedAlumni.length})
+              Alumni ({totalAlumni})
             </span>
           </summary>
-          <div class="space-y-2 mt-2">
-            {sortedAlumni.map((m) => (
-              <div class="flex items-baseline gap-2 text-sm py-1 border-b border-gray-subtle">
-                {m.data.website ? (
-                  <a href={m.data.website} class="text-slate-nav hover:text-red-cmu font-medium no-underline" target="_blank" rel="noopener noreferrer">
-                    {m.data.name}
-                  </a>
-                ) : (
-                  <span class="font-medium text-slate-nav">{m.data.name}</span>
-                )}
-                {m.data.firstPosition && (
-                  <span class="text-gray-secondary">{m.data.firstPosition}</span>
-                )}
-                {m.data.endYear && (
-                  <span class="text-gray-secondary ml-auto shrink-0">{m.data.endYear}</span>
-                )}
+          <div class="mt-2 space-y-6">
+            {alumniGroups.map((group) => (
+              <div>
+                <h3 class="text-sm font-bold text-gray-secondary uppercase tracking-wide mb-2">{group.label}</h3>
+                <div class="space-y-1">
+                  {group.members.map((m) => (
+                    <div class="flex items-baseline gap-2 text-sm py-1 border-b border-gray-subtle">
+                      {m.data.website ? (
+                        <a href={m.data.website} class="text-slate-nav hover:text-red-cmu font-medium no-underline" target="_blank" rel="noopener noreferrer">
+                          {m.data.name}
+                        </a>
+                      ) : (
+                        <span class="font-medium text-slate-nav">{m.data.name}</span>
+                      )}
+                      {m.data.firstPosition && (
+                        <span class="text-gray-secondary">{m.data.firstPosition}</span>
+                      )}
+                      {m.data.endYear && (
+                        <span class="text-gray-secondary ml-auto shrink-0">{m.data.endYear}</span>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
