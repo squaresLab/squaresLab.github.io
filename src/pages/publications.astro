@@ -1,18 +1,31 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PublicationEntry from '../components/PublicationEntry.astro';
+import PublicationFilter from '../components/PublicationFilter.tsx';
 import { getPublications } from '../lib/publications';
+import { getCollection } from 'astro:content';
 
 const publications = getPublications();
+const projectEntries = await getCollection('projects');
 
-// Extract unique years, sorted descending
-const years = [...new Set(publications.map((p) => p.year))].sort((a, b) => b - a);
-
-// Group publications by year
-const pubsByYear = new Map<number, typeof publications>();
-for (const year of years) {
-  pubsByYear.set(year, publications.filter((p) => p.year === year));
+// Build topic metadata from publications and projects
+const topicCounts = new Map<string, number>();
+for (const pub of publications) {
+  for (const tag of pub.projects) {
+    topicCounts.set(tag, (topicCounts.get(tag) || 0) + 1);
+  }
 }
+
+const topics = projectEntries
+  .filter((p) => topicCounts.has(p.data.tag))
+  .map((p) => ({
+    tag: p.data.tag,
+    name: p.data.name,
+    count: topicCounts.get(p.data.tag) || 0,
+  }))
+  .sort((a, b) => b.count - a.count);
+
+// Extract unique years sorted descending
+const years = [...new Set(publications.map((p) => p.year))].sort((a, b) => b - a);
 ---
 
 <BaseLayout title="Publications">
@@ -23,16 +36,10 @@ for (const year of years) {
     </div>
   </section>
 
-  <section class="max-w-content mx-auto px-8 py-8">
-    {years.map((year) => (
-      <div class="mb-8">
-        <h2 class="text-xl font-bold text-red-cmu border-b border-gray-subtle pb-1 mb-4">
-          {year}
-        </h2>
-        {pubsByYear.get(year)!.map((pub) => (
-          <PublicationEntry pub={pub} />
-        ))}
-      </div>
-    ))}
-  </section>
+  <PublicationFilter
+    client:load
+    publications={publications}
+    topics={topics}
+    years={years}
+  />
 </BaseLayout>
