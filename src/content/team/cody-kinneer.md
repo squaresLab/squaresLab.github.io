@@ -1,6 +1,7 @@
 ---
 name: Cody Kinneer
-website: https://kinneerc.github.io
+website: https://www.linkedin.com/in/kinneerc/
+photo: /img/team/cody-kinneer.jpeg
 role: phd
 status: alumni
 startYear: 2016

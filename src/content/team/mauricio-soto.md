@@ -1,6 +1,7 @@
 ---
 name: Mauricio Soto
-website: https://www.cs.cmu.edu/~msotogon/
+website: https://www.linkedin.com/in/mausotog/
+photo: /img/team/mau-soto.jpeg
 role: phd
 status: alumni
 startYear: 2015
