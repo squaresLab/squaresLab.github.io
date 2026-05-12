@@ -1,5 +1,6 @@
 ---
 name: Cláudia Mamede
+website: https://claudiarmamede.github.io/
 role: phd
 status: current
 startYear: 2023

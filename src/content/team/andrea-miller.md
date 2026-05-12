@@ -1,5 +1,6 @@
 ---
 name: Andrea Miller
+website: https://se-phd.s3d.cmu.edu/People/students/student-bios/miller-andrea-rose.html
 role: phd
 status: current
 startYear: 2024
