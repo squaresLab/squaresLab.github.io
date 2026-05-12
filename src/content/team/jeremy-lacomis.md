@@ -1,7 +1,7 @@
 ---
 name: Jeremy Lacomis
 photo: /img/team/jeremy-lacomis.jpg
-website: jeremylacomis.com
+website: https://jeremylacomis.com/
 role: phd
 status: alumni
 startYear: 2016
