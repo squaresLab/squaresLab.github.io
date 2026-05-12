@@ -15,7 +15,7 @@ const parts = name.trim().split(/\s+/);
 const initials = parts[0][0].toUpperCase() + parts.slice(1).map((p) => p[0]).join('');
 
 const isLarge = size === 'large';
-const avatarSize = isLarge ? 'w-16 h-16 text-xl' : 'w-10 h-10 text-sm';
+const avatarSize = isLarge ? 'w-24 h-24 text-2xl' : 'w-16 h-16 text-base';
 ---
 
 {isLarge ? (

@@ -183,8 +183,17 @@ const photos = (yaml.load(photosRaw) as { src: string; alt: string }[]) || [];
               <div>
                 <h3 class="text-sm font-bold text-gray-secondary uppercase tracking-wide mb-2">{group.label}</h3>
                 <div class="space-y-1">
-                  {group.members.map((m) => (
-                    <div class="flex items-baseline gap-2 text-sm py-1 border-b border-gray-subtle">
+                  {group.members.map((m) => {
+                    const initials = m.data.name.trim().split(/\s+/).map((p: string, i: number) => i === 0 ? p[0].toUpperCase() : p[0]).join('');
+                    return (
+                    <div class="flex items-center gap-2 text-sm py-1.5 border-b border-gray-subtle">
+                      {m.data.photo ? (
+                        <img src={m.data.photo} alt={m.data.name} class="w-7 h-7 rounded-full ring-1 ring-red-cmu object-cover shrink-0" />
+                      ) : (
+                        <div class="w-7 h-7 rounded-full bg-gray-200 ring-1 ring-red-cmu flex items-center justify-center text-[10px] font-bold text-gray-secondary shrink-0">
+                          {initials}
+                        </div>
+                      )}
                       {m.data.website ? (
                         <a href={m.data.website} class="text-slate-nav hover:text-red-cmu font-medium no-underline" target="_blank" rel="noopener noreferrer">
                           {m.data.name}
@@ -199,7 +208,8 @@ const photos = (yaml.load(photosRaw) as { src: string; alt: string }[]) || [];
                         <span class="text-gray-secondary ml-auto shrink-0">{m.data.endYear}</span>
                       )}
                     </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ))}
