@@ -1,5 +1,6 @@
 ---
 name: Tobias Dürschmid
+photo: /img/team/tobias-durschmid.jpg
 website: https://tobiasduerschmid.github.io/
 role: phd
 status: alumni

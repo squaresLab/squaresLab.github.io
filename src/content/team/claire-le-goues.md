@@ -1,5 +1,6 @@
 ---
 name: Claire Le Goues
+photo: /img/team/claire-le-goues.jpeg
 website: https://www.clairelegoues.com
 role: faculty
 status: current

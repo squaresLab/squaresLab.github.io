@@ -1,5 +1,6 @@
 ---
 name: Paulo Canelas
+photo: /img/team/paulo-canelas.jpg
 website: https://pcanelas.com/about/
 role: visitor
 status: current

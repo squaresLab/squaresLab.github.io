@@ -1,5 +1,6 @@
 ---
 name: Milda Zizyte
+photo: /img/team/milda-zizyte.jpg
 website: https://vivo.brown.edu/display/mzizyte
 role: postdoc
 status: alumni

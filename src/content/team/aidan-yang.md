@@ -1,5 +1,6 @@
 ---
 name: Aidan Yang
+photo: /img/team/aidan-yang.jpg
 website: https://aidanby.github.io/
 role: phd
 status: alumni

@@ -1,5 +1,6 @@
 ---
 name: Nikitha Rao
+photo: /img/team/nikitha-rao.png
 website: https://raonikitha.github.io/
 role: phd
 status: alumni

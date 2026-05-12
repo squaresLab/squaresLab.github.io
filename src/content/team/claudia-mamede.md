@@ -1,5 +1,6 @@
 ---
 name: Cláudia Mamede
+photo: /img/team/claudia-mamede.jpg
 website: https://claudiarmamede.github.io/
 role: phd
 status: current

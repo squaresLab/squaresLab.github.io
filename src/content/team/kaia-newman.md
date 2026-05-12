@@ -1,5 +1,6 @@
 ---
 name: Kaia Newman
+photo: /img/team/kaia-newman.jpg
 website: https://kaianew.github.io
 role: phd
 status: current

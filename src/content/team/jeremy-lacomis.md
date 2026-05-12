@@ -1,5 +1,6 @@
 ---
 name: Jeremy Lacomis
+photo: /img/team/jeremy-lacomis.jpg
 website: https://www.cs.cmu.edu/~jlacomis/
 role: phd
 status: alumni

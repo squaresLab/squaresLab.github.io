@@ -1,5 +1,6 @@
 ---
 name: He Ye
+photo: /img/team/he-ye.jpg
 website: https://heye.me/
 role: postdoc
 status: alumni

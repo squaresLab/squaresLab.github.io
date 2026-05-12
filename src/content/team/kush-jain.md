@@ -1,5 +1,6 @@
 ---
 name: Kush Jain
+photo: /img/team/kush-jain.jpg
 website: http://www.kushjain.com
 role: phd
 status: alumni

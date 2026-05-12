@@ -1,5 +1,6 @@
 ---
 name: Rijnard van Tonder
+photo: /img/team/rijnard-van-tonder.jpg
 website: https://rijnard.com/
 role: phd
 status: alumni

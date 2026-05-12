@@ -1,5 +1,6 @@
 ---
 name: Sophia Kolak
+photo: /img/team/sophia-kolak.jpg
 website: https://sophiakolak.github.io/
 role: masters
 status: alumni
