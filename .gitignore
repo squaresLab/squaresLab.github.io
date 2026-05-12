@@ -1,6 +1,8 @@
 .DS_Store
 todos.txt
 
+docs/
+
 # Astro
 node_modules/
 dist/
