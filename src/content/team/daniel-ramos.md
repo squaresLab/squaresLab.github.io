@@ -1,6 +1,7 @@
 ---
 name: Daniel Ramos
 website: https://sat.inesc-id.pt/~drr/
+photo: /img/team/daniel-ramos.jpg
 role: phd
 status: alumni
 researchArea: Program Transformation
