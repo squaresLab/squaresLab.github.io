@@ -1,7 +1,7 @@
 ---
 name: Hoaye Tian
 website: https://haoyetiancoder.github.io/
-role: visitor
+photo: /img/team/haoye-tian.png
 status: alumni
-startYear: 2019
+startYear: 2024
 ---
