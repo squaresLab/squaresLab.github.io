@@ -9,7 +9,7 @@ tools:
     url: "https://github.com/SophieHYe/PreciseBugs"
   - name: "ManyBugs"
     url: "http://repairbenchmarks.cs.umass.edu/"
-sortOrder: 4
+sortOrder: 8
 ---
 
 We have developed frameworks and datasets for evaluating program repair, and conducted empirical evaluations of repair along a number of axes.
