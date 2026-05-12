@@ -1,6 +1,6 @@
 ---
 name: Chris Timperley
-website: https://www.christimperley.co.uk
+website: https://chris.timperley.info/
 role: postdoc
 status: alumni
 researchArea: SE for Robotics
