@@ -1,5 +1,5 @@
 ---
-name: Claudia Mamede
+name: Cláudia Mamede
 role: phd
 status: current
 startYear: 2023
