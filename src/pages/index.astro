@@ -80,30 +80,8 @@ const extraCount = currentMembers.length - previewMembers.length;
     </div>
   </section>
 
-  {/* Research Areas */}
-  <section class="border-t-2 border-red-cmu">
-    <div class="max-w-content mx-auto px-8 py-10">
-      <h2 class="text-xl font-bold mb-6">Research Areas</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {sortedProjects.map((project) => (
-          <a
-            href="/research"
-            class="block border-l-[3px] border-red-cmu pl-4 no-underline group"
-          >
-            <p class="font-bold text-slate-nav group-hover:text-red-cmu transition-colors">
-              {project.data.name}
-            </p>
-            <p class="text-sm text-gray-secondary mt-1">
-              {project.data.shortDescription}
-            </p>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
   {/* Team Preview */}
-  <section class="bg-gray-50">
+  <section class="border-t-2 border-red-cmu bg-gray-50">
     <div class="max-w-content mx-auto px-8 py-10">
       <h2 class="text-xl font-bold mb-6">Team</h2>
       <div class="flex items-center gap-4 flex-wrap">
@@ -164,6 +142,28 @@ const extraCount = currentMembers.length - previewMembers.length;
       >
         View all {publications.length} publications &rarr;
       </a>
+    </div>
+  </section>
+
+  {/* Research Areas */}
+  <section class="bg-gray-50">
+    <div class="max-w-content mx-auto px-8 py-10">
+      <h2 class="text-xl font-bold mb-6">Research Areas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sortedProjects.map((project) => (
+          <a
+            href="/research"
+            class="block border-l-[3px] border-red-cmu pl-4 no-underline group"
+          >
+            <p class="font-bold text-slate-nav group-hover:text-red-cmu transition-colors">
+              {project.data.name}
+            </p>
+            <p class="text-sm text-gray-secondary mt-1">
+              {project.data.shortDescription}
+            </p>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 
