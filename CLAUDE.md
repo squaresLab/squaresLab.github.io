@@ -40,7 +40,7 @@ Push to the `update` branch. GitHub Actions (`.github/workflows/deploy.yml`) bui
 2. Place materials in `public/materials/` using the BibTeX key as filename prefix. The pipeline auto-discovers these files:
    - `KEY.pdf`, `KEY.slides.pdf`, `KEY.slides.pptx`, `KEY.slides.key`, `KEY.slides.odp`, `KEY.poster.pdf`
 3. For external resources, add fields to the BibTeX entry: `code`, `data`, `tool`, `results`, `website`, `video`
-4. Add a `project` field with comma-separated tags to appear on the research page. Current tags: `new-repair`, `robots`, `ai`, `benchmarks`, `sbse`, `decomp`, `develop`, `static-repair`, `transform-testing`, `semantic-repair`, `repair`, `eval`
+4. Add a `project` field with comma-separated tags to appear on the research page. Current tags: `heuristic-repair`, `static-repair`, `llm-repair`, `robots`, `security`, `ai`, `transform-testing`, `benchmarks`, `sbse`, `develop`
 5. Use `{Le Goues}` or `{Le~Goues}` in BibTeX author fields to preserve multi-word surnames
 6. Verify with `npx tsx scripts/test-bib.ts` to check parsing
 
@@ -81,7 +81,7 @@ The research page auto-populates publications per project from the BibTeX pipeli
 ## Pages and Components
 
 **Pages** (`src/pages/`):
-- `index.astro` -- Homepage with hero, research area cards, team preview, recent publications, highlights
+- `index.astro` -- Homepage: hero, team preview, recent publications, research area cards, highlights (in that order)
 - `publications.astro` -- All publications with Preact filter island
 - `research.astro` -- Expandable research area cards with filtered publications
 - `team.astro` -- Team members by role, photo carousel, collapsible alumni
@@ -113,11 +113,22 @@ System font stack, no external font dependencies. Max content width: `max-w-cont
 
 Logo files are in `public/img/SquaresLogo*`. The small version appears in the nav bar, the larger version in the homepage hero, and the 16/32px versions serve as favicons.
 
+## Useful Scripts
+
+- `npx tsx scripts/test-bib.ts` -- verify BibTeX parsing, show count, first entry, years, topics
+- `npx tsx scripts/analyze-tags.ts` -- show tag distribution, untagged papers, and papers per tag
+
+## Cross-referencing with CV
+
+Claire's CV is symlinked at `cv/` (gitignored). The CV has its own `legoues.bib` and `legoues-cv.tex`. When adding new publications, add entries to both `_bibliography/publications.bib` (lab website) and `cv/legoues.bib` (CV). The CV bib uses different keys and does not use `project` tags. The CV tex file manually lists entries by key in `\nocite{}` within `\begin{refsection}` blocks, organized by type (Journal, Conference, Short, Workshop, Non-Refereed, Tutorials).
+
+Papers by lab members where Claire is not a co-author belong on the lab website but not the CV.
+
 ## Notes
 
-- Claire Le Goues's name uses `{Le Goues}` or `{Le~Goues}` in BibTeX to preserve the multi-word surname
-- The initials generator uses first letter of first name + first letter of each subsequent word (e.g., "Claire Le Goues" shows "CLG")
+- Multi-word surnames in BibTeX need braces: `{Le Goues}` or `{Le~Goues}`
 - The `firstPosition` field on alumni records their first position after leaving, not necessarily their current one
-- Paulo Canelas is listed as `visitor` role with `current` status (honorary member, Chris Timperley's student)
+- Paulo Canelas is listed as `visitor` with `current` status (honorary member, Chris Timperley's student)
 - Missing PDFs are documented in `docs/missing-pdfs.md`
-- The `docs/` directory is gitignored and not deployed
+- The `docs/` and `cv/` directories are gitignored and not deployed
+- DBLP query for cross-referencing: `https://dblp.org/search/publ?q=author%3Aclaire_le_goues&format=json&h=1000`
