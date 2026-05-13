@@ -1,6 +1,7 @@
 ---
 name: Harrison Green
-website: https://harrisongreen.me/
+website: https://harrison.green
+photo: /img/team/harrison-green.jpg
 role: phd
 status: current
 startYear: 2022
